@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+    --dark1: #0c042c; 
+    --dark2: #0c214b; 
+    --light1: #c3ccd4; 
+
+    --neutral-gray: #b0b8c1;
+    --neutral-bg-color: rgba(176, 184, 193, 0.2);
+    --neutral-bg-color-contrast: rgba(124, 81, 149, 0.2); 
+    
+    --contrast-color: #3a255d;
+    --contrast-color-shadow: #3b255d2c; 
+    --contrast-color2: #6a2dcc; 
+    --positive-color: #2ac670; 
+            
+    --tittle1: whitesmoke; 
+    --tittle2: #2ac4dd; 
+
+    --circle-color-shadow: rgba(42, 196, 221,0.15);
+    --circle-color-shadow-two: rgba(42, 196, 221,0.05)
+}
+
+
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+/* Home Section Style */
+.Home{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+}
+.Home_Section-tittle{
+    position: relative;
+    height: 300px;
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://prevenzione-salute.com/wp-content/uploads/2023/05/medico-che-suggerisce-un-programma-ospedaliero-al-paziente-scaled-1-1030x740.jpeg);
+    background-position: 0% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.Home_Section-tittle h3{
+    margin-top: 5rem;
+    color: var(--tittle1);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    text-align: left;
+    font-weight: 700;
+    max-width: 40%;
+    opacity: 0;
+    z-index: 3;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+} 
+.home-content-demo{
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+    margin-top: 0rem;
+   
+}
+.demo-descrizione h5{
+    padding-left: 20px;
+    text-align: left;
+    color: var(--tittle2);
+    font-size: 20px;
+}
+.demo-descrizione h3{
+    padding-left: 17px;
+    text-align: left;
+    color: var(--tittle1);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+.demo-descrizione p{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.card-container-info{
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-description h3{
+    font-size: 20px;
+    color: var(--tittle2);
+    padding-top: 10px;
+    font-weight: lighter;
+}
+.card-container-info .img-container{
+    background-color: var(--neutral-bg-color);
+    border-radius: 8px;
+    height: 70px;
+}
+
+
+
+.button-container-demo{
+    margin-top: 2rem;
+    gap: 10px;
+}
+.home-content-demo .button-style{
+    padding: 8px;
+    width: 16rem;
+}
+#button-funz{
+    width: 24rem;
+    padding: 8px;
+}
+
+
+
+
+.form-richiedi{
+    border-left: 5px solid var(--neutral-bg-color-contrast);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.form-richiedi h5{
+    text-align: left;
+    color: var(--tittle2);
+    font-size: 20px;
+    margin-top: -1.2rem;
+}
+.form-richiedi h3{
+    color: var(--tittle1);
+    font-size: 40px;
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+
+}
+.form-richiedi input{
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    outline-color: var(--contrast-color2);
+    border: none;
+}
+.form-richiedi select{
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.container-input{
+    gap: 10px;
+    margin-top: -0.5rem;
+}
+.form-richiedi textarea{
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    padding: 12px;
+}
+.form-richiedi .privacy{
+    padding-top: 15px;
+}
+
+.container-input{
+    padding: 5px;
+}
+
+
+.container-demo{
+    margin-top: -1.5rem;
+    height: 400px;
+    position: relative;
+    background-image: url(https://img.zerounoweb.it/wp-content/uploads/2022/02/14154452/shutterstock_1653839683.jpg);
+    background-position: 0% 85%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.description-demo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 15rem;
+        z-index: 3;
+}
+.description-demo button{
+    height: 2.5rem;
+}
+.description-demo h3{
+    color: var(--tittle2);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    font-family: system-ui;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+.description-demo p{
+    text-align: center;
+    padding: 10px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+}
+
+
+#map{
+    height: 400px;
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+    z-index: 1;
+}
+.img-containers{
+    background-color: var(--neutral-bg-color);
+    border-radius: 4px;
+    padding: 15px;
+}
+.img-containers img{
+    width: 40px;
+    height: 40px;
+}
+
+.description-demo{
+    height: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .Home_Section-tittle{
+        height: 150px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 25px;
+    } 
+
+    .home-content-demo{
+        flex-direction: column;
+    }
+    .demo-descrizione{
+        padding-top: 20px;
+    }
+    .demo-descrizione h5{
+        font-size: 18px;
+        padding-left: 16px;
+    }
+    .demo-descrizione h3{
+        font-size: 20px;
+    }
+
+    .img-containers{
+        background-color: var(--neutral-bg-color);
+        border-radius: 4px;
+        padding: 15px;
+    }
+    .img-containers img{
+        width: 25px;
+        height: 25px;
+    }
+    .card-description h3{
+        font-size: 18px;
+        margin: 0;
+    }
+    .card-container-info{
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 16px;
+    }
+    .demo-descrizione p{
+        padding-left: 16px;
+    }
+
+    .form-richiedi{
+        margin-top: 1rem;
+        border: none;
+    }
+    .form-richiedi h5{
+        font-size: 18px;
+    }
+    .form-richiedi h3{
+        font-size: 20px;
+    }
+    .container-input:last-of-type{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .container-input select{
+        margin-top: 0rem;
+    }
+    .container-input input{
+        font-size: 16px;
+        height: 2.5rem;
+    }
+    .form-richiedi .button-style{
+        padding: 0;
+        width: 12rem;
+        margin-top: 0.5rem;
+        margin-bottom:2rem;
+    }
+    .description-demo h3{
+        font-size: 20px;
+        max-width: 80%;
+    }
+    
+    .demo-descrizione{
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .container-demo{
+        background-size: cover;
+    } 
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .Home_Section-tittle{
+        height: 220px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+    } 
+    
+    .home-content-demo h3{
+        font-size: 28px;
+    }
+    .home-content-demo h5{
+        font-size: 20px;
+    }
+    .demo-descrizione h3{
+        font-size: 25px;
+    }
+    .description-demo h3{
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 30px;
+    } 
+    .demo-descrizione h5{
+        font-size: 20px;
+    }
+    .demo-descrizione h3{
+        font-size: 25px;
+    }
+    .form-richiedi h5{
+        font-size: 20px;
+    }
+    .form-richiedi h3{
+        font-size: 25px;
+    }
+    .description-demo p{
+        max-width: 70%;
+    }
+    .description-demo h3{
+        font-size: 28px;
+    }
+
+}
+@media (min-width: 1400px) and (max-width: 1700px){
+    .description-demo h3{
+        font-size: 28px;
+    }
+    .demo-descrizione h5{
+        font-size: 24px;
+    }
+    .demo-descrizione h3{
+        font-size: 28px;
+    }
+    .form-richiedi h5{
+        font-size: 24px;
+    }
+    .form-richiedi h3{
+        font-size: 28px;
+    }
+}
+

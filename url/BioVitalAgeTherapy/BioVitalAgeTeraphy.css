@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+    --dark1: #0c042c; 
+    --dark2: #0c214b; 
+    --light1: #c3ccd4; 
+
+    --neutral-gray: #b0b8c1;
+    --neutral-bg-color: rgba(176, 184, 193, 0.2);
+    --neutral-bg-color-contrast: rgba(124, 81, 149, 0.2); 
+    
+    --contrast-color: #3a255d;
+    --contrast-color-shadow: #3b255d2c; 
+    --contrast-color2: #6a2dcc; 
+    --positive-color: #2ac670; 
+            
+    --tittle1: whitesmoke; 
+    --tittle2: #2ac4dd; 
+
+    --circle-color-shadow: rgba(42, 196, 221,0.15);
+    --circle-color-shadow-two: rgba(42, 196, 221,0.05)
+}
+
+
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+
+/* Home Section Style */
+.Home_Section-tittle{
+    position: relative;
+    height: 300px;
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://eu-images.contentstack.com/v3/assets/blt0090d6170c12be15/bltb00bca630c207de6/66506ccdbaad82112674d9d9/blog-jmc-articolo-medicina-digitale.jpg?width=1920&height=906&format=jpg&quality=50);
+}
+.backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.Home_Section-tittle h3{
+    margin-top: 5rem;
+    color: var(--tittle1);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 40%;
+    opacity: 0;
+    z-index: 1;
+} 
+.Home-content-container-integrazioneAi{
+    margin: auto;
+}
+.Home-content-container-integrazioneAi h3{
+    color: var(--tittle1);
+    font-size: 35px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 20px;
+    opacity: 0;
+}
+span{
+    color: var(--tittle2);
+}
+#percorsi{
+    height: 3rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.integrazioneAi-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-content-demo{
+    background-color: rgba(124, 81, 149, 0.2); 
+    margin-top: 2rem;
+}
+.demo-descrizione{
+    margin-left: -1rem;
+}
+.demo-descrizione h5{
+    padding: 10px;
+    text-align: center;
+    color: var(--tittle1);
+}
+.demo-descrizione h3{
+    text-align: center;
+    color: var(--tittle2);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: system-ui;
+}
+.demo-descrizione p{
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    margin: auto;
+}
+.button-container-demo{
+    margin-top: 2rem;
+    gap: 10px;
+}
+.home-content-demo .button-style{
+    padding: 8px;
+    width: 16rem;
+}
+#button-funz{
+    width: 24rem;
+    padding: 8px;
+}
+.form-richiedi{
+    border-left: 5px solid var(--neutral-bg-color-contrast);
+}
+.form-richiedi h3{
+    color: var(--tittle1);
+    font-size: 35px;
+    text-align: left;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+}
+.form-richiedi input{
+    display: block;
+    width: 30rem;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    outline-color: var(--contrast-color2);
+    border: none;
+}
+.form-richiedi select{
+    width: 30rem;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.form-richiedi .privacy{
+    padding: 10px;
+}
+
+
+.applicazioni-container{
+    height: 40rem;
+    position: relative;
+    margin-bottom: -2rem;
+    overflow: hidden;
+}
+.applicazioni-container .backdrop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.content-container{
+    z-index: 4;
+    gap: 15px;
+    margin: 0rem auto;
+}
+.cards{
+    background-color: var(--neutral-bg-color);
+    border-radius: 8px;
+    border-left: 5px solid var(--contrast-color2);
+    box-shadow: 1px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: all 0.2s cubic-bezier(.215, .61, .355, 1);
+}
+.cards h3{
+    text-align: left;
+    color: var(--tittle1);
+}
+.tittle-terapy{
+    color: var(--tittle1);
+    font-size: 35px;
+    z-index: 3;
+    font-weight: bold;
+    padding-left: 50px;
+    margin: 0rem auto;
+    text-align: left;
+}
+.button-style{
+    margin-top: 1rem;
+}
+.applicazioni-container .marcatore{
+    margin: 0rem auto;
+    padding-left: 50px;
+    padding-bottom: 5px;
+}
+.cards:hover {
+    background-color: var(--contrast-color-shadow);
+}
+
+#teraphy-adjust,
+#teraphy-adjust-two{
+    margin-top: -3rem;
+}
+.integrazioneAi-img-container img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .Home_Section-tittle{
+        height: 150px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 25px;
+        min-width: 100%;
+    } 
+    .home_presentation-img_container img{
+        height: 220px;
+        border-radius: 4px;
+    }
+    #teraphy{
+        flex-direction: column-reverse;
+    }
+    .Home-content-container-integrazioneAi h3{
+        font-size: 20px;
+        margin-bottom: -0.5rem;
+    }
+    .integrazioneAi-img-container img{
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+    #teraphy-adjust,
+    #teraphy-adjust-two{
+        margin-top: 0rem;
+    }
+    #teraphy-adjust,
+    #teraphy-adjust-two{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    #teraphy .button-style{ 
+        height: 2rem;
+        width: 12rem;
+        margin-top: 0rem;
+    }
+    #percorsi{
+        width: 12rem;
+        height: 2rem;
+        margin-top: 0rem;
+    }
+    #teraphy-adjust-two{
+        flex-direction: column-reverse;
+    }
+    
+
+    .applicazioni-container{
+        height: 360px;
+        margin-top: 2rem;
+    }
+    .tittle-terapy{
+       font-size: 20px;
+       padding-left: 16px;
+       max-width: 80%;
+       margin: 0;
+    }
+    .applicazioni-container .marcatore{
+        padding-left: 16px;
+        padding-top: 20px;
+    }
+    .cards h3{
+        font-size: 20px;
+    }
+    .content-container{
+        margin-top: 0.5rem;
+        overflow-y: auto;
+    }
+
+
+    .home-content-demo{
+        flex-direction: column;
+    }
+    .demo-descrizione h3{
+        font-size: 22px;
+    }
+    .demo-descrizione .button-style{
+        height: 2rem;
+        width: 12rem;
+        padding: 0;
+        margin-top: -0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-richiedi{
+        border: none;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .form-richiedi h3{
+        font-size: 20px;
+        padding: 0;
+    }
+    .form-richiedi input{
+        width: 100%;
+        height: 2.5rem;
+        font-size: 16px;
+    }
+    .form-richiedi select{
+        margin-top: 0rem;
+        width: 100%;
+        font-size: 16px;
+    }
+    .privacy{
+        margin-left: -0.5rem;
+        margin-bottom: 0rem;
+    }
+    .form-richiedi .button-style{
+        padding: 0;
+        height: 2rem;
+        width: 10rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+
+    .Home_Section-tittle{
+        height: 220px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+        min-width: 100%;
+    } 
+    .Home-content-container-integrazioneAi{
+        flex-direction: column-reverse;
+    }
+    #teraphy-adjust{
+        flex-direction: column;
+    } 
+    .tittle-terapy{
+        font-size: 25px;
+    }
+    .cards h3{
+        font-size: 20px;
+    }
+    .applicazioni-container{
+        height: 450px;
+    }
+    .applicazioni-container .marcatore{
+        padding-top: 4rem;
+    }
+    .content-container{
+        margin-top: -2rem;
+    }
+    .home-content-demo{
+        flex-direction: column;
+    }
+    .demo-descrizione h3{
+        font-size: 28px;
+    }
+    .demo-descrizione h5{
+        font-size: 20px;
+    }
+    .form-richiedi{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-richiedi h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    .privacy{
+        text-align: center;
+        max-width: 88%;
+        margin-left: 0.5rem;
+    }
+    .button-container-demo .button-style{
+        margin-top: 0rem;
+    }
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 30px;
+        min-width: 100%;
+    } 
+
+    .Home-content-container-integrazioneAi h3{
+        font-size: 25px;
+    }
+    .Home-content-container-integrazioneAi p:last-of-type{
+        display: none;
+    }
+    .Home-content-container-integrazioneAi{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .marcatore{
+        font-size: 20px;
+    }
+
+    .tittle-terapy{
+        font-size: 25px;
+    }
+    .backdrop .marcatore{
+        margin-top: 2rem;
+    }
+    .cards h3{
+        font-size: 25px;
+    }
+
+    .form-richiedi input{
+        width: 100%;
+    }
+    .form-richiedi select{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+    .Home-content-container-integrazioneAi{
+        min-width: 95%;
+    }
+
+    .tittle-terapy{
+        min-width: 88%;
+    }
+    .marcatore{
+        min-width: 88%;
+    }
+    .content-container {
+        min-width: 88%;
+    }
+}
+
+
+@media (min-width: 2560px) {
+    .privacy{
+        max-width: 60%;
+    }
+}
+

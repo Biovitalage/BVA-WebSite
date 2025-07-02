@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+    --dark1: #0c042c; 
+    --dark2: #0c214b; 
+    --light1: #c3ccd4; 
+
+    --neutral-gray: #b0b8c1;
+    --neutral-bg-color: rgba(176, 184, 193, 0.2);
+    --neutral-bg-color-contrast: rgba(124, 81, 149, 0.2); 
+    
+    --contrast-color: #3a255d;
+    --contrast-color-shadow: #3b255d2c; 
+    --contrast-color2: #6a2dcc; 
+    --positive-color: #2ac670; 
+            
+    --tittle1: whitesmoke; 
+    --tittle2: #2ac4dd; 
+
+    --circle-color-shadow: rgba(42, 196, 221,0.15);
+    --circle-color-shadow-two: rgba(42, 196, 221,0.05)
+}
+
+
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+/* Home Section Style */
+.Home_Section-tittle{
+    position: relative;
+    height: 500px;
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.alessandrorotondo.com/wp-content/uploads/2024/05/AI-medicina-cover.jpg);
+    background-position: 0% 20%;
+}
+.backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+}
+.Home_Section-tittle h3{
+    margin-top: 5rem;
+    color: var(--tittle1);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    text-align: left;
+    font-weight: 700;
+    max-width: 40%;
+    opacity: 0;
+    z-index: 1;
+} 
+#subtitle{
+    text-align: left;
+    max-width: 37%;
+    color: var(--tittle1);
+    z-index: 1;
+    padding: 10px;
+    margin-left: 2rem;
+}
+.img-container img{
+    width: 100%;
+    height: auto;
+}
+.img-container {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.img-container-description{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(1px);
+}
+.img-container-description h3{
+    text-align: left;
+    color: var(--tittle1);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+}
+.img-container-description p{
+    color: aliceblue;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.container-blog-presentation{
+    transform: translate(0%,-8%);
+}
+.container-blog-presentation:last-of-type{
+    transform: translate(0%, 0%);
+}
+.container-blog-presentation .img-container{
+    position: relative;
+}
+.container-blog-presentation .img-container .backdrop{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.container-blog-presentation .img-container:hover .backdrop {
+    background: none;
+}
+
+
+
+
+/* New List */
+.tittle-news{
+    margin: auto;
+    padding: 80px 50px 20px 40px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tittle-news h3,
+.tittle-news-two h3{
+    color: var(--tittle1);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    text-align: left;
+    font-weight: 700;
+    max-width: 40%;
+    opacity: 0;
+}
+.tittle-news-two{
+    margin: auto;
+    padding: 60px 40px 0px 45px;
+}
+.tittle-news select{
+    width: 14rem;
+    height: 2.8rem;
+    border-radius: 8px; 
+    padding: 8px;
+    background-color: var(--contrast-color2);
+    color: var(--tittle1);
+    outline-color: var(--contrast-color2);
+    border: none;
+}
+.tittle-news select option{
+    background-color: var(--dark2);
+}
+
+.ultime-notizie-container{
+    gap: 10px;  
+    padding: 0px 50px 10px 50px;
+    margin: auto;
+}
+.card-notizie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-bg-color);
+    overflow: hidden;
+    height: 35rem;
+}
+.card-descrizione{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -1rem; 
+}
+.autore-description{
+    gap: 10px;
+}
+.card-notizie h3{
+    color: var(--tittle1);
+}
+.pagination{
+    margin: auto;
+    gap: 10px;
+}
+.pagination button{
+    background-color: var(--contrast-color2);
+    color: var(--tittle1);
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 40px
+}
+.pagination button:hover{
+    background-color: var(--dark1);
+}
+#active{
+    background-color: var(--dark1);
+}
+
+
+
+
+
+
+
+.Aggiornamenti{
+    margin: -2rem auto 4rem auto;
+    gap: 10px;
+}
+.card-etaBiologica{
+    background-color: rgba(176, 184, 193, 0.2);
+    border-radius: 4px;
+}
+.card-etaBiologica h3{
+    text-align: left;
+    color: var(--tittle1);
+}
+.img-container-etaBiologica{
+    background-color: rgba(42, 196, 221,0.05);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+.img-container-circle{
+    background-color: rgba(42, 196, 221,0.15);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+.home-content-demo{
+    background-color: rgba(124, 81, 149, 0.2); 
+    margin-top: 2rem;
+}
+.demo-descrizione{
+    margin-left: -1rem;
+}
+.demo-descrizione h5{
+    padding: 10px;
+    text-align: center;
+    color: var(--tittle1);
+}
+.demo-descrizione h3{
+    text-align: center;
+    color: var(--tittle2);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: system-ui;
+}
+.demo-descrizione p{
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    margin: auto;
+}
+.button-container-demo{
+    margin-top: 2rem;
+    gap: 10px;
+}
+.home-content-demo .button-style{
+    padding: 8px;
+    width: 16rem;
+}
+.img-container-circle img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.scale-animate {
+    animation: scale 1s ease-in-out forwards;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1.0);
+        opacity: 1; 
+    }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .Home_Section-tittle{
+        height: 220px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        font-size: 20px;
+        min-width: 15rem;
+        margin-top: 2rem;
+    }
+    #subtitle{
+        display: none;
+    }
+
+    .container-blog-presentation{
+        flex-direction: column;
+        transform: translate(0%, 0%);
+    }
+    
+    .tittle-news{
+        flex-direction: column;
+        padding: 16px;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .tittle-news h3{
+        font-size: 20px;
+        min-width: 15rem;
+        padding-bottom: 10px;
+    }
+    .tittle-news select{
+        height: 2.5rem;
+    }
+
+    .ultime-notizie-container{
+        flex-direction: column;
+        margin: 0;
+        padding: 5px 16px 5px 16px;
+    }
+    .card-notizie{
+        height: 20rem;
+        width: 100%;
+    }
+    .card-image{
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .card-image img{
+        width: 100%;
+        height: auto;
+        margin-top: -1rem;
+    }
+    
+    .card-descrizione{
+       height: 55%;
+       margin: 0;
+       background-color: var(--neutral-bg-color-contrast);
+    }
+    .autore-description{
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .card-descrizione h3{
+        margin-top: 0.5rem;
+    }
+    .card-descrizione p{
+        margin-bottom: 0rem;
+    }
+    .card-descrizione .arrow-button{
+        padding-bottom: 10px;
+    }
+    .pagination button{
+        height: 2.5rem;
+        padding: 0;
+    }
+
+   
+    .tittle-news-two{
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .tittle-news-two h3{
+        padding: 10px 0px 10px 16px;
+        margin: 0;
+        font-size: 20px;
+        min-width: 15rem;
+    }
+    .Aggiornamenti{
+        margin: 0;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .img-container-circle img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .Home_Section-tittle{
+        height: 400px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+    } 
+    .Home_Section-tittle p{
+        display: none;
+    }
+    .container-blog-presentation{
+        transform: translate(0%, -14.8%);
+    }
+    .container-blog-presentation .img-container{
+        height: 220px;
+    }
+    .img-container-description p{
+        display: none;
+    }
+    .img-container-description .arrow-button{
+        color: var(--tittle1);
+    }
+
+
+    .card-notizie{
+        height: 30rem;
+        width: 100%;
+    }
+    .card-image{
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .card-image img{
+        width: 200%;
+        height: auto;
+        margin-top: -1rem;
+        margin-left: -8rem;
+    }
+    .card-descrizione{
+       height: 55%;
+       margin: 0;
+       background-color: var(--neutral-bg-color-contrast);
+    }
+    .autore-description{
+        margin-bottom: 0.5rem;
+        flex-direction: column;
+    }
+    .card-descrizione h3{
+        margin-top: 0.5rem;
+    }
+    .card-descrizione p{
+        margin-bottom: 0rem;
+    }
+    .card-descrizione .arrow-button{
+        padding-bottom: 10px;
+    }
+
+    .tittle-news-two h3{
+        font-size: 25px;
+        min-width: 20rem;
+    }
+
+    
+    .Aggiornamenti{
+        flex-direction: column;
+    }
+    .card-etaBiologica h3{
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 30px;
+        text-align: center;
+    } 
+    .Home_Section-tittle p{
+        display: none;
+    }
+    .img-container-description p{
+        display: none;
+    }
+    .container-blog-presentation{
+        height: 300px;
+        transform: translate(0%,-11.2%);
+    }
+    .container-blog-presentation .img-container{
+        height: 100%;
+        margin: 0;
+    }
+    .img-container-description .arrow-button{
+        color: var(--tittle1);
+    }
+
+    .tittle-news h3,
+    .tittle-news-two h3{
+        font-size: 25px;
+    }
+    .card-descrizione h3{
+        font-size: 25px;
+    }
+    .autore-description{
+        flex-direction: column;
+        margin-top: -1rem;
+        gap: 0;
+    }
+    .card-descrizione{
+        height: 60%;
+    }
+    .card-notizie{
+        height: 40rem;
+    }
+}
+@media (min-width: 1400px) and (max-width: 1700px) {
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 30px;
+    } 
+    .card-notizie{
+        height: 40rem;
+    }
+}
+
+
+
+@media (min-width: 2560px) {
+    .card-notizie{
+        height: 40rem;
+    }
+}

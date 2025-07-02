@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+    --dark1: #0c042c; 
+    --dark2: #0c214b; 
+    --light1: #c3ccd4; 
+
+    --neutral-gray: #b0b8c1;
+    --neutral-bg-color: rgba(176, 184, 193, 0.2);
+    --neutral-bg-color-contrast: rgba(124, 81, 149, 0.2); 
+    
+    --contrast-color: #3a255d;
+    --contrast-color-shadow: #3b255d2c; 
+    --contrast-color2: #6a2dcc; 
+    --positive-color: #2ac670; 
+            
+    --tittle1: whitesmoke; 
+    --tittle2: #2ac4dd; 
+
+    --circle-color-shadow: rgba(42, 196, 221,0.15);
+    --circle-color-shadow-two: rgba(42, 196, 221,0.05)
+}
+
+
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+/* Home Section Style */
+.Home{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+}
+.Home_Section-tittle{
+    position: relative;
+    height: 300px;
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.dimi.univr.it/documenti/Iniziativa/immagine/immagine268271.jpeg);
+    background-position: 0% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.Home_Section-tittle h3{
+    margin-top: 5rem;
+    color: var(--tittle1);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    text-align: left;
+    font-weight: 700;
+    max-width: 40%;
+    opacity: 0;
+    z-index: 1;
+} 
+
+
+.customers-container {
+    background-color: var(--neutral-bg-color-contrast);
+}
+.contenitore-cards{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+.card-customer {
+    position: relative;
+    height: 17.2rem;
+    width: 17.2rem;
+    overflow: hidden;
+}
+.card-customer .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.card-customer img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.card-customer:hover img {
+    transform: scale(1.1);
+}
+.card-customer:hover .backdrop {
+    opacity: 1;
+}
+.customers-container h3,
+.container-feedback h3{
+    padding-bottom: 30px;
+    color: var(--tittle1);
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.contenitore-presentazione-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+span{
+    color: var(--tittle2);
+}
+.contenitore-presentazione-description h3{
+    color: var(--tittle1);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: left;
+    max-width: 80%;
+    padding-bottom: 10px;
+}
+.contenitore-presentazione{
+    margin: 2rem auto;
+}
+
+.container-feedback{
+    margin-top: 4rem;
+}
+.img-container-grid{
+    background-color: rgba(42, 196, 221,0.05);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: auto;
+}
+.img-container-circle{
+    background-color: rgba(42, 196, 221,0.15);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.feedbeck-container{
+    margin: auto auto 4rem auto;
+    gap: 10px;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+.card-feedback{
+    text-align: center;
+    background-color: var(--neutral-bg-color);
+    border-radius: 8px;
+}
+.card-feedback h3{
+    color: var(--tittle2);
+    padding-top: 5px;
+}
+.card-feedback p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card-feedback p:last-of-type{
+    margin-top: -2rem;
+}
+
+
+.home-content-demo{
+    background-color: rgba(124, 81, 149, 0.2); 
+
+    position: relative;
+    overflow: hidden;
+}
+.demo-descrizione{
+    margin-left: -55rem;
+    z-index: 2;
+}
+.demo-descrizione h5{
+    padding: 10px;
+    text-align: center;
+    color: var(--tittle1);
+}
+.demo-descrizione h3{
+    text-align: center;
+    color: var(--tittle2);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: system-ui;
+}
+.demo-descrizione p{
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    margin: auto;
+}
+.button-container-demo{
+    margin-top: 2rem;
+    gap: 10px;
+}
+.home-content-demo .button-style{
+    padding: 8px;
+    width: 14rem;
+}
+.home-content-demo .backdrop{
+    margin-left: 10%;
+    margin-top: 10%;
+    transform: rotate(40deg);
+    height: 200rem;
+    width: 200rem;
+    overflow: hidden;
+    z-index: 2;
+}
+.home-content-demo .backdrop img{
+    transform: rotate(-40deg);
+    margin-left: -40rem;
+    margin-top: 30rem;
+    z-index: 1;
+    filter: blur(2px);
+}
+
+#current-year{
+    color: inherit !important;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .Home_Section-tittle{
+        height: 150px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 25px;
+        min-width: 100%;
+        text-align: center;
+    } 
+    .contenitore-presentazione{
+        flex-direction: column-reverse;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .contenitore-presentazione h3{
+        font-size: 20px;
+    }
+    .customers-container h3{
+        font-size: 22px;
+        padding: 10px 0px 20px 2px;
+        text-align: left;
+    }
+    .card-customer{
+        margin-bottom: 0.5rem;
+    }
+    .container-feedback{
+        margin-top: 3rem;
+    }
+    .container-feedback h3{
+        text-align: left;
+        font-size: 22px;
+        padding-left: 16px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .feedbeck-container{
+        flex-direction: column;
+        padding: 16px;
+        margin-bottom: 1.5rem;
+    }
+    .card-feedback{
+        height: 20rem;
+    }
+
+    @media only screen and (min-width: 370px) and (max-width: 480px){
+        .card-feedback{
+            height: 18rem;
+        }
+    }
+
+
+    .card-feedback p:last-of-type{
+        display: none;
+    }
+    .card-feedback h3:last-of-type{
+        text-align: center;
+        font-weight: lighter;
+        margin: 0;
+        padding: 0;
+    }
+
+    .home-content-demo{
+        margin-top: 0rem;
+    }
+    .demo-descrizione{
+        margin-left: 0rem;
+    }
+    .demo-descrizione h3{
+        font-size: 22px;
+    }
+    .button-container-demo{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .home-content-demo .button-style{
+        padding: 0px;
+        width: 12rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+
+    .Home_Section-tittle{
+        height: 220px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+    } 
+    .contenitore-presentazione{
+        flex-direction: column-reverse;
+    }
+    .contenitore-presentazione h3{
+        font-size: 28px;
+    }   
+    .contenitore-cards{
+        gap: 13px;
+    }
+    .card-customer {
+        position: relative;
+        height: 17.2rem;
+        overflow: hidden;
+    }
+    .feedbeck-container{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .card-feedback{
+        min-width: 49%;
+    }
+
+    .home-content-demo{
+        height: 25rem;
+    }
+    .demo-descrizione {
+        margin-left: 0rem;
+    }
+    .demo-descrizione h3{
+        font-size: 30px;
+    }
+    .demo-descrizione p{
+        max-width: 50%;
+    }
+    .button-container-demo{
+        flex-direction: column;
+    }
+
+    .backdrop{
+        display: none;
+    }
+
+   
+}
+
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 30px;
+    } 
+    .contenitore-presentazione p:last-of-type{
+        display: none;
+    }
+    .feedbeck-container{
+        flex-wrap: wrap;
+    }
+    .card-feedback{
+        min-width: 46%;
+    }
+    .home-content-demo .backdrop{
+        display: none;
+    }
+    .demo-descrizione{
+        margin-left: 0rem;
+    }
+    .demo-descrizione h3{
+        font-size: 30px;
+    }
+    .button-container-demo{
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 30px;
+    } 
+    .demo-descrizione{
+        margin-left: -38rem;
+    }
+    .home-content-demo .backdrop{
+        margin-top: 16rem;
+    }
+    .contenitore-presentazione{
+        min-width: 90%;
+    }   
+    .feedbeck-container{
+        min-width: 80%;
+    }
+}
+
+
+@media (min-width: 2560px) {
+    .home-content-demo .backdrop{
+        margin-left: 45rem;
+        margin-top: 13rem;
+    }
+    .customers-container{
+        height: 35rem;
+    }
+    .card-customer{
+        width: 24rem;
+        height: 100%;
+    }
+    
+}

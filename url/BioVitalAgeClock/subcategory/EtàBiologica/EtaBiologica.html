@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BVA Clock - Età Biologica</title>
+    <link rel="stylesheet" href="../../../../componenti.css">
+    <link rel="shortcut icon" href="/BioVitalyAge-Website/includes/images/icone/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="EtaBiologica.css">
+    
+    <!-- Import CDN -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JS -->
+    <script src="/BioVitalyAge-Website/app.js" defer></script>
+    <script src="/BioVitalyAge-Website/includes/components/components-loader.js" defer></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+   
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <section class="Home" id="Home_Section_secondary">
+
+        <div class="Home_Section-tittle">
+            <div class="backdrop"></div>
+            <h3>Orologio dell'Età Biologica</h3>
+        </div>
+
+        <div class="w-100 m-0 Home-content-container section-1">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10 d-flex Home-content-container-piattaforma">
+    
+                <div class="col-12 col-md-12 col-lg-6 piattaforma-description">    
+                    <h3><span>Età Biologica: <br> il nuovo indicatore per la tua salute</span></h3>
+                </div>
+    
+                <div class="col-md-12 col-lg-6 p-0 età-biologica-description">
+                    <p>
+                        L’età biologica riflette la condizione reale del nostro organismo, andando oltre il semplice dato anagrafico. 
+                        Basata sull’analisi dei cambiamenti cellulari e molecolari che si accumulano con il tempo, essa rappresenta 
+                        una misura complessiva del processo di invecchiamento. A differenza dell’età cronologica, l’età biologica 
+                        integra informazioni su genetica, stile di vita, ambiente e stress fisiologico, offrendo una valutazione più 
+                        accurata e personalizzata dello stato di salute. Oggi rappresenta un indicatore chiave per rilevare 
+                        precocemente segnali di squilibrio, valutare il rischio di patologie e orientare interventi di prevenzione su 
+                        misura.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 m-0 Home-content-container section-2">
+        
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10 d-flex Home-content-container-piattaforma second-section">
+        
+                <div class="col-md-12 col-lg-6 p-0 piattaforma-img translate-img">
+                    <img src="../../../../includes/images/eta_biologica_exampleImage.PNG" alt="">
+                </div>
+        
+                <div class="col-12 col-md-12 col-lg-6 piattaforma-description">
+                    <p class="marcatore">Introduzione all'età biologica</p>
+        
+                    <h3>L’Orologio Biologico di <span>BioVitalAge</span></h3>
+        
+                    <p>
+                        All’interno della piattaforma BioVitalAge, l’Orologio Biologico rappresenta il cuore tecnologico della
+                        nostra valutazione personalizzata dell’invecchiamento. Grazie all’intelligenza artificiale, il sistema analizza
+                        biomarcatori chiave ricavati da prelievo di sangue, integrandoli con dati clinici e comportamentali per
+                        calcolare con precisione l’età biologica complessiva.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10 Home-content-container-piattaforma-core">
+        
+                
+                <div class="title-core">                    
+                    <h3>Ma il nostro approccio non si ferma qui: il calcolo dell’età biologica è solo il punto di partenza per un’analisi 
+                        più approfondita. BioVitalAge genera <span> score specifici per organi e apparati vitali :</span>
+                    </h3>
+                </div>
+
+                <div class="mobile-hidden p-0 piattaforma-img-core translate-img">
+                    <img src="/BioVitalyAge-Website/includes/images/score_organi_e_apparati.PNG" alt="Immagine degli Score per Organi e Apparati">
+                </div>
+
+                <div class="mobile-visible col-12 col-md-12 col-lg-12 p-xxl-5 flex-wrap Home-Content-container-vantaggi">
+                    <div class="grid-container position-relative grid-container-score">
+                        <div class="p-2 container-score-mobile">
+                            <div class="img-container-grid">
+                                <div class="img-container-circle">
+                                    <div class="img-container-circle">
+                                        <img src="/BioVitalyAge-Website/includes/images/icone/Heart_Colorato.png" alt="Icona Salute del Cuore">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Salute del cuore</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-container position-relative grid-container-score">
+                        <div class="p-2 container-score-mobile">
+                            <div class="img-container-grid">
+                                <div class="img-container-circle">
+                                    <img src="/BioVitalyAge-Website/includes/images/icone/Reni.png" alt="Icona Salute Renale">
+                                </div>
+                            </div>
+                            <h3>Salute Renale</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-container position-relative grid-container-score">
+                        <div class="p-2 container-score-mobile">
+                            <div class="img-container-grid">
+                                <div class="img-container-circle">
+                                    <img src="/BioVitalyAge-Website/includes/images/icone/Fegato.png" alt="Icona ">
+                                </div>
+                            </div>
+                            <h3>Salute Epatica</h3>
+                        </div>
+                    </div>
+    
+                    <div class="grid-container position-relative grid-container-score">
+                        <div class="p-2 container-score-mobile">
+                            <div class="img-container-grid">
+                                <div class="img-container-circle">
+                                    <img src="/BioVitalyAge-Website/includes/images/icone/Cervello.png" alt="Icona Cartella Paziente">
+                                </div>
+                            </div>
+                            <h3>Salute Cerebrale</h3>
+                        </div>
+                    </div>
+    
+                    <div class="grid-container position-relative grid-container-score">
+                        <div class="p-2 container-score-mobile">
+                            <div class="img-container-grid">
+                                <div class="img-container-circle">
+                                    <img src="/BioVitalyAge-Website/includes/images/icone/Cellula.png" alt="Icona Strategia Marketing">
+                                </div>
+                            </div>
+                            <h3>Salute Ormonale</h3>
+                        </div>
+                    </div>
+    
+                    <div class="grid-container position-relative grid-container-score">
+                        <div class="p-2 container-score-mobile">
+                            <div class="img-container-grid">
+                                <div class="img-container-circle">
+                                    <img src="/BioVitalyAge-Website/includes/images/icone/Blood_Colorato.png" alt="Icona Prezzo Scalabile">
+                                </div>
+                            </div>
+                            <h3>Salute del Sangue</h3>
+                        </div>
+                    </div>
+    
+                    <div class="grid-container position-relative grid-container-score">
+                        <div class="p-2 container-score-mobile">
+                            <div class="img-container-grid">
+                                <div class="img-container-circle">
+                                    <img src="/BioVitalyAge-Website/includes/images/icone/Sistema.png" alt="Icona Supporto Scientifico">
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Salute del Sistema Immunitario</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-container position-relative grid-container-score">
+                        <div class="p-2 container-score-mobile">
+                            <div class="img-container-grid">
+                                <div class="img-container-circle">
+                                    <img src="/BioVitalyAge-Website/includes/images/icone/Microbiota.png" alt="Icona Supporto Scientifico">
+                                </div>
+                            </div>
+                            <h3>Microbiota</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-11 col-xxl-9 d-flex-column justify-content-center align-items-center home_section-etaBilogica">
+            <h3>Con <span>BioVitalAge</span> puoi:</h3>
+        
+            <div class="card-container-etaBiologica">
+        
+                <div class="p-3 p-md-5 d-flex-column justify-content-center align-items-center card-etaBiologica">
+                    <div class="img-container-etaBiologica">
+                        <div class="img-container-circle">
+                            <img src="/BioVitalyAge-Website/includes/images/icone/EtaBiologica.png" alt="">
+                        </div>
+                    </div>
+                    <p>
+                        <span>Comprendere il tuo livello di invecchiamento biologico</span>
+                        in modo dettagliato e personalizzato, grazie
+                        all’integrazione di dati clinici
+                    </p>
+                </div>
+        
+                <div class="p-3 p-md-5 d-flex-column justify-content-center align-items-center card-etaBiologica">
+                    <div class="img-container-etaBiologica">
+                        <div class="img-container-circle">
+                            <img src="/BioVitalyAge-Website/includes/images/icone/invecchiamento_rapido.png" alt="Icona Invecchiamento Rapido">
+                        </div>
+                    </div>
+                    <p>
+                        <span>Individuare precocemente disfunzioni o segnali di accelerazione dell’invecchiamento</span>
+                        in specifici
+                        organi e apparati, grazie a score dedicati.
+                    </p>
+                </div>
+        
+                <div class="p-3 p-md-5 d-flex-column justify-content-center align-items-center card-etaBiologica">
+                    <div class="img-container-etaBiologica">
+                        <div class="img-container-circle">
+                            <img src="/BioVitalyAge-Website/includes/images/icone/andamento_biologico.png" alt="Icona Andamento Biologico">
+                        </div>
+                    </div>
+                    <p>
+                        <span>Monitorare nel tempo l’andamento biologico del corpo</span>
+                        valutando l’efficacia di trattamenti, 
+                        interventi nutrizionali o modifiche nello stile di vita
+                    </p>
+                </div>
+
+                <div class="p-3 p-md-5 d-flex-column justify-content-center align-items-center card-etaBiologica">
+                    <div class="img-container-etaBiologica">
+                        <div class="img-container-circle">
+                            <img src="/BioVitalyAge-Website/includes/images/icone/andamento_organi.png" alt="Icona Andamento Organi">
+                        </div>
+                    </div>
+                    <p>
+                        <span>Monitorare l’andamento degli organi e apparati</span>
+                        per prevenire squilibri e preservare l’equilibrio biologico. 
+                    </p>
+                </div>
+
+                <div class="p-3 p-md-5 d-flex-column justify-content-center align-items-center card-etaBiologica">
+                    <div class="img-container-etaBiologica">
+                        <div class="img-container-circle">
+                            <img src="/BioVitalyAge-Website/includes/images/icone/consapevolezza.png" alt="Icona Consapevolezza">
+                        </div>
+                    </div>
+                    <p>
+                        <span>Agire in modo consapevole</span>
+                        per rallentare l’invecchiamento e migliorare la longevità attiva, grazie a 
+                        informazioni precise sullo stato biologico.
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+
+        <div class="w-100 m-0 p-3 p-md-5 Home-content-container">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10 d-flex Home-content-container-piattaforma">
+    
+                <div class="col-12 col-md-12 col-lg-6 piattaforma-description">    
+                    <h3><span>Nuova interpretazione dei tuoi esami ematici con l’analisi predittiva di BioVitalAge</span></h3>
+                </div>
+    
+                <div class="col-md-12 col-lg-6 p-0 età-biologica-description">
+                    <p>
+                        BioVitalAge Clock trasforma il referto in indicazioni concrete sull’invecchiamento, per stimare con precisione
+                        l’età biologica e fornire score funzionali dettagliati per organi e apparati.
+                        Grazie all’intelligenza artificiale, BioVitalAge analizza i biomarcatori che influenzano l’invecchiamento e
+                        fornisce indicazioni personalizzate per ottimizzare la salute attraverso l’esame del sangue.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 m-0 Home-content-container section-3">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10 d-flex Home-content-container-piattaforma">
+    
+                <div class="col-12 col-md-12 col-lg-6 piattaforma-description">    
+                    <h3><span>Elenco dei Biomarcatori</span></h3>
+                </div>
+    
+                <div class="col-md-12 col-lg-6 p-0 età-biologica-description">
+                    <div class="img-container-biomarcatore">
+                        <img src="/BioVitalyAge-Website/includes/images/BIOMARCATORI.png" alt="Elenco dei Biomarcatori">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 m-0 p-3 p-md-5 Home-content-container">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10 d-flex Home-content-container-piattaforma">
+    
+                <div class="col-12 col-md-12 col-lg-6 piattaforma-description">    
+                    <h3><span>Protezione dei dati e accesso sicuro</span></h3>
+                </div>
+    
+                <div class="col-md-12 col-lg-6 p-0 età-biologica-description">
+                    <p>
+                        BioVitalAge è accessibile tramite una piattaforma web sicura con autenticazione controllata, oppure via API 
+                        cifrate, per integrare i dati nei sistemi sanitari o di ricerca. 
+                    </p>
+                    <p>
+                        I server che ospitano i dati sono dislocati in infrastrutture cloud conformi alle normative europee sulla 
+                        privacy (GDPR), garantendo sicurezza, continuità e rispetto delle leggi locali.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 faq-container">
+            <h3 class="faq-title">Semplice, accessibile e universalmente compatibile</h3>
+
+            <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
+                  <h2 class="accordion-header" id="accordion-header" >
+                    <button class="accordion-btn" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" >
+                        Facile da usare e ampiamente adottato
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        BioVitalAge è progettato per essere intuitivo e integrabile
+                        in qualsiasi contesto clinico, rendendolo la soluzione più diffusa per la valutazione dell’età biologica
+                        e dello stato funzionale di organi e apparati.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
+                    <h2 class="accordion-header" id="accordion-header">
+                        <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                            aria-expanded="false">
+                            Conveniente ed efficiente
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            L’analisi si basa su esami del sangue di routine, tra i test biologici più economici e facilmente accessibili.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
+                    <h2 class="accordion-header" id="accordion-header">
+                        <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                            aria-expanded="false">
+                            Compatibile con ogni struttura sanitaria
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Utilizzabile con esami provenienti da qualsiasi laboratorio,
+                            indipendentemente dalla città, nazione o tipo di centro medico.
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
+                    <h2 class="accordion-header" id="accordion-header">
+                        <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                            aria-expanded="false">
+                            Algoritmi basati su decenni di ricerca
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            L’intelligenza artificiale BioVitalAge sfrutta una base 
+                            scientifica per generare raccomandazioni personalizzate a partire dai tuoi parametri ematici.
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="w-100 m-0 Home-content-container section-2">
+        
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10 d-flex Home-content-container-piattaforma second-section">
+        
+                
+                <div class="col-12 col-md-12 col-lg-6 piattaforma-description">
+                    
+                    <h3>Il nostro <span>referto</span></h3>
+                    
+                    <p>
+                        Il nostro referto fornisce una stima della tua età biologica basata sui principali biomarcatori ematici,
+                        confrontandola con l’età biologica. Il confronto tra età biologica e cronologica consente di misurare in modo
+                        oggettivo lo stato di salute dell’organismo: un’età biologica inferiore all’età anagrafica suggerisce un profilo
+                        più sano e resiliente, mentre un valore più elevato può evidenziare condizioni latenti o rischi futuri.
+                    </p>
+
+                    <p>
+                        Attraverso raccomandazioni pratiche e personalizzate, il nostro referto offre l’opportunità di intraprendere
+                        interventi mirati per ottimizzare il benessere, rallentare il decadimento biologico e potenzialmente
+                        ringiovanire a livello cellulare.
+                    </p>
+
+                </div>
+
+                <div class="col-md-12 col-lg-6 p-5 piattaforma-img translate-img">
+                    <img src="../../../../includes/images/referto_image.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="w-100 m-0 p-3 p-md-5 Home-content-container">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10 d-flex Home-content-container-piattaforma">
+    
+                <div class="col-12 col-md-12 col-lg-6 piattaforma-description">    
+                    <h3><span>Impatto dei Biomarcatori sull’Età Biologica</span></h3>
+                </div>
+    
+                <div class="col-md-12 col-lg-6 p-0 età-biologica-description">
+                    <p>
+                        Ogni biomarcatore ematico considerato contribuisce in modo specifico al calcolo finale, con un peso
+                        variabile in base alla sua rilevanza biologica e clinica, quindi viene valutato in base alla sua capacità di
+                        accelerare o rallentare i processi di invecchiamento. Biomarcatori come glucosio, trigliceridi o
+                        infiammazione sistemica possono aumentare l’età biologica se fuori range, mentre altri – come livelli
+                        ottimali di elettroliti o parametri metabolici equilibrati – possono contribuire a una maggiore stabilità
+                        cellulare e a un rallentamento dell’invecchiamento. Comprendere il ruolo di ogni marcatore permette di
+                        agire in modo strategico, con l’obiettivo di ridurre la tua età biologica e promuovere la longevità.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+    
+    </section>
+
+    
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

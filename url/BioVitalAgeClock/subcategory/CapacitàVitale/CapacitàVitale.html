@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BVA Clock - Capacità Vitale</title>
+    <link rel="stylesheet" href="../../../../componenti.css">
+    <link rel="shortcut icon" href="/BioVitalyAge-Website/includes/images/icone/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="capacitàVitale.css">
+    
+    <!-- Import CDN -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JS -->
+    <script src="../../../../app.js" defer></script>
+    <script src="/BioVitalyAge-Website/includes/components/components-loader.js" defer></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+   
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <section class="Home" id="Home_Section_secondary">
+
+        <div class="Home_Section-tittle">
+            <div class="backdrop"></div>
+            <h3>Capacità Vitale</h3>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-12 col-xxl-10 p-lg-0 p-xxl-5 d-flex justify-content-center align-items-center home_section-presentation">
+            <div class="col-12 col-md-12 col-lg-6 col-xxl-5 p-3 p-md-5 home_presentation-img_container">
+                <img src="https://img.freepik.com/foto-premium/medico-di-consulenza-medica-a-distanza-che-fornisce-assistenza-sanitaria-di-emergenza-via-internet_763042-7020.jpg" alt="">
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6 col-xxl-7 p-3 p-md-5 home_presentation-description">
+                <p class="marcatore">Introduzione Piattaforma</p>
+            
+                <h3 id="desktop">BioVitalyAge Clock - Software Gestionale <span>innovativo</span> che sfrutta l'intelligenza
+                    artificiale per il calcolo dell'età biologica</h3>
+                <h3 id="mobile-version">BioVitalyAge Clock - Software Gestionale <span>innovativo</span></h3>
+            
+                <p class="mobile-adapter">BioVitalAgeClock è una piattaforma che elabora, mediante Intelligenza Artificiale (AI),
+                    i biomarcatori di laboratorio e fisiologici (sia strumentali che relativi a caratteristiche
+                    fisiche), che emergono dalla Letteratura Scientifica come potenzialmente associati
+                    all’invecchiamento per calcolare l’età biologica e determinare un punteggio che definisca la
+                    salute dei diversi organi e apparati.
+                    L’obiettivo è quello di indirizzare il paziente verso la strada da seguire per modificare il proprio
+                    stato di salute e cambiare il processo di invecchiamento a proprio vantaggio.</p>
+                <button onclick="window.location = '/BioVitalyAge-Website/url/contattaci/contattaci.html';" class="button">
+                    <span class="button__icon-wrapper">
+                        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+                            <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                        </svg>
+            
+                        <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                            class="button__icon-svg button__icon-svg--copy">
+                            <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </span>
+                    Prova la Demo ora
+                </button>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-11 col-xxl-9 p-3 p-lg-1 p-xxl-2 d-flex-column justify-content-center align-items-center home_section-etaBilogica">   
+
+            <p class="marcatore">Spiegazione età biologica</p>
+            <h3>Che cos'è l'<span>età biologica</span></h3>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-12 col-xxl-12 p-3 p-md-5 p-lg-3 p-xxl-5 d-flex justify-content-center align-items-center card-container-etaBiologica">
+
+                    <div class="p-3 p-md-5 d-flex-column justify-content-center align-items-center card-etaBiologica">
+                        <div class="img-container-etaBiologica">
+                            <div class="img-container-circle">
+                                <img src="../../includes/images/icone/polmoni.png" alt="">
+                            </div>
+                        </div>
+                        <p>
+                            <span>L'età biologica</span>
+                           Per età biologica si intende l'età di un individuo definita dal livello di cambiamenti biologici
+                           dipendenti dall'età, come l'accumulo di danni molecolari e cellulari. Essa dipende dall'intensità dei
+                           processi di invecchiamento e può essere influenzata dalla genetica, dalle scelte di vita e
+                           dall'ambiente. L’età biologica viene riconosciuta sempre più frequentemente come un parametro
+                           più affidabile rispetto all’età cronologica (l’età di un individuo calcolata sulla base del tempo
+                           trascorso dalla nascita) per determinare l’evoluzione clinica.
+                        </p>
+                    </div>
+
+                    <div class="p-3 p-md-5 d-flex-column justify-content-center align-items-center card-etaBiologica">
+                        <div class="img-container-etaBiologica">
+                            <div class="img-container-circle">
+                                <img src="../../includes/images/icone/polmoni.png" alt="">
+                            </div>
+                        </div>
+                        <p>
+                            <span>La capacità Vitale</span>
+                         Per capacità vitale si intende uno stato fisiologico (dovuto a normali o accelerati processi biologici
+di invecchiamento) risultante dall'interazione tra più sistemi fisiologici, che si riflette nel livello di
+energia e nel metabolismo, nella funzione neuromuscolare, nelle funzioni immunitarie e di
+risposta allo stress del corpo. Essa è considerata il determinante fisiologico sottostante della
+capacità intrinseca, definita dall’OMS come l'insieme di tutte le capacità fisiche e mentali a cui un
+individuo può attingere in qualsiasi momento.
+                        </p>
+                    </div>
+
+                    <div class="p-3 p-md-5 d-flex-column justify-content-center align-items-center card-etaBiologica">
+                        <div class="img-container-etaBiologica">
+                            <div class="img-container-circle">
+                                <img src="../../includes/images/icone/polmoni.png" alt="">
+                            </div>
+                        </div>
+                        <p>
+                            <span>La resilienza</span>
+                            Per resilienza si intende la capacità fisica e psicologica di un individuo di adattarsi e recuperare
+dopo stress, malattie o traumi, influenzata da fattori biologici, psicologici e ambientali. La
+resilienza psicologica rappresenta un insieme di capacità comportamentali e attitudinali che
+consentono di reagire positivamente di fronte ad avversità e difficoltà. La resilienza fisica, invece, è
+la capacità di resistere al declino funzionale o di recuperare la salute fisica a seguito di un fattore
+di stress.
+                        </p>
+                    </div>
+
+        </div>
+     
+        <div class="col-12 col-md-12 col-lg-12 col-xxl-10 p-xxl-5 d-flex Home-content-container-integrazioneAi">
+
+            <div class="col-12 col-md-12 col-lg-6 p-3 p-md-5 integrazioneAi-description">
+                <p class="marcatore">Integrazione dell'AI</p>
+
+                <h3>Come Sfruttiamo l'<span>Intelligenza Artificiale</span></h3>
+
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                    amet soluta tempora quasi nam delectus necessitatibus,
+                     impedit voluptatum in ratione.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                    amet soluta tempora quasi nam delectus necessitatibus,
+                     impedit voluptatum in ratione.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6 p-3 p-md-5 integrazioneAi-img-container">
+                <img src="https://www.innovationpost.it/wp-content/uploads/2024/10/Intelligenza-artificiale-Lenovo-1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-12 col-xxl-10 p-xxl-5 d-flex Home-content-container-integrazioneAitwo">
+
+            <div class="col-12 col-md-12 col-lg-6 p-3 p-md-5 integrazioneAi-img-container">
+                <img src="https://biomedia.net/wp-content/uploads/2024/09/AdobeStock_783974597-scaled.jpeg" alt="">
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6 p-3 p-md-5 integrazioneAi-description-two">
+                <p class="marcatore">Tecnologia e Medicina</p>
+
+                <h3>Che cosa sono i <span>Biomarcatori</span></h3>
+
+                <p>
+                  I biomarcatori sono un vasto gruppo di segni clinici oggettivi che possono essere misurati in maniera accurata e riproducibile come indicatori di uno stato di salute, malattia o di risposta ad un’esposizione o ad un intervento.
+                </p>
+                <p>
+                    I biomarcatori dell’invecchiamento sono indicatori fisiologici e molecolari della degenerazione strutturale o funzionale a livello sistemico, tissutale, cellulare e subcellulare dell’organismo correlata all’età. Essi possono essere usati per monitorare i cambiamenti biologici associati all’invecchiamento.
+                </p>
+            </div>
+        </div>
+
+        <!-- Modale -->
+        <div id="videoModal" class="video-modal">
+            <div class="video-modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <iframe id="youtubeVideo"
+                        src="" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="contenitore-video">
+            <div class="backdrop d-flex justify-content-center align-items-center">
+
+                <div class="col-md-5 d-flex flex-column align-items-center justify-content-center Home-content-Intro">
+
+                    <h3 class="col-md-12 m-4 p-2 titoloVideo">
+                        BioVitalAge, molto più di un semplice gestionale medico
+                    </h3>
+    
+                    <p class="col-md-10 p-4">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, dolore libero.
+                    </p>
+                    
+                    <button class="playButton" id="playButton">
+                        <img src="../../includes/images/icone/play.png" alt="Play">
+                    </button>
+                    
+                </div>
+
+            </div>
+            <video autoplay muted loop>
+                <source src="../../includes/video/MEdicoPaziente.mp4" type="video/mp4">
+                Il tuo browser non supporta i video HTML5.
+            </video>
+        </div>
+
+       <!-- Primo carosello -->
+        <div class="col-12 col-md-12 col-lg-11 col-xxl-9 p-md-4 p-lg-2 d-flex justify-content-between align-items-center Funzionalità-title">
+            <h3 class="col-12 col-lg-8">Le Funzioni Innovative della Piattaforma</h3>
+            <div class="col-12 col-md-2 btn-container-carousel">
+                <button id="btn-left"><</button>
+                <button id="btn-right">></button>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-11 col-xxl-9 p-3 ElenzoFunzionalità-Carousel-container" id="carousel-Funzionalità">
+            <div class="card-carousel-container">
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle"> Composizione corporea<span></span></h3>
+            
+                        <p id="carousel-description">
+                            In questa sezione è possibile inserire i diversi parametri relativi alla composizione corporea del
+paziente, i quali permetteranno di ricavare l’età metabolica e un punteggio fisico, i quali potranno
+essere monitorati nel tempo [per valutare l’andamento dello stato di salute del paziente].
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Capacità vitale <span></span></h3>
+            
+                        <p id="carousel-description">
+                            Mediante la compilazione di un test sarà possibile ricavare un punteggio relativo alla capacità
+vitale del paziente, derivante dai risultati del test per ciascuno dei 5 domini di cui si compone,
+complementati dall’analisi di biomarcatori circolanti dell’infiammazione e del metabolismo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Età biologica <span></span></h3>
+            
+                        <p id="carousel-description">
+                            In questa sezione sarà possibile effettuare il calcolo e conservare tutti i referti dell’età biologica
+calcolata in diversi momenti, per valutarne l’andamento e l’associazione a modifiche dello stile di
+vita e della salute del paziente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Salute degli organi</h3>
+            
+                        <p id="carousel-description">
+                            BioVitalAge valuta lo stato di salute degli organi grazie a un sistema innovativo basato su parametri clinici e strumentali. Ogni organo riceve un punteggio, permettendo una lettura chiara e personalizzata delle criticità. Questo consente una prevenzione mirata e un monitoraggio avanzato del benessere.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Titolo <span>placeholder</span></h3>
+            
+                        <p id="carousel-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                            amet soluta tempora quasi nam delectus necessitatibus,
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Titolo <span>placeholder</span></h3>
+            
+                        <p id="carousel-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                            amet soluta tempora quasi nam delectus necessitatibus,
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-11 col-xxl-9 p-md-4 p-lg-2 d-flex justify-content-between align-items-center Funzionalità-title">
+            <h3 class="col-12 col-lg-8">Le Funzioni Innovative della Piattaforma</h3>
+            <div class="col-12 col-md-2 btn-container-carousel-2">
+                <button id="btn-left"><</button>
+                <button id="btn-right">></button>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-11 col-xxl-9 p-3 ElenzoFunzionalità-Carousel-container" id="carousel-Funzionalità-2">
+            <div class="card-carousel-container">
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Titolo <span>placeholder</span></h3>
+            
+                        <p id="carousel-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                            amet soluta tempora quasi nam delectus necessitatibus,
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Titolo <span>placeholder</span></h3>
+            
+                        <p id="carousel-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                            amet soluta tempora quasi nam delectus necessitatibus,
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Titolo <span>placeholder</span></h3>
+            
+                        <p id="carousel-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                            amet soluta tempora quasi nam delectus necessitatibus,
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Titolo <span>placeholder</span></h3>
+            
+                        <p id="carousel-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                            amet soluta tempora quasi nam delectus necessitatibus,
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Titolo <span>placeholder</span></h3>
+            
+                        <p id="carousel-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                            amet soluta tempora quasi nam delectus necessitatibus,
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Titolo <span>placeholder</span></h3>
+            
+                        <p id="carousel-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                            amet soluta tempora quasi nam delectus necessitatibus,
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">Tecnologia e Medicina</p>
+        
+                        <h3 id="carousel-tittle">Titolo <span>placeholder</span></h3>
+            
+                        <p id="carousel-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                            amet soluta tempora quasi nam delectus necessitatibus,
+                        </p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-12 col-xxl-10 p-lg-2 p-xxl-5 d-flex Home-content-container-integrazioneAi" id="teraphy">
+
+            <div class="col-12 col-md-12 col-lg-6 p-3 p-md-5 integrazioneAi-description">
+                <p class="marcatore">BioVitalAge Therapy</p>
+
+                <h3>Percorsi Terapeutici con <span>BioVitalAge Teraphy</span></h3>
+
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                    amet soluta tempora quasi nam delectus necessitatibus,
+                     impedit voluptatum in ratione.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                    amet soluta tempora quasi nam delectus necessitatibus,
+                     impedit voluptatum in ratione.
+                </p>
+                <button class="button" id="percorsi" onclick="window.location = '../BioVitalAgeTherapy/BioVitalAgeTeraphy.html';">Scopri di più</button>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6 p-3 p-md-5 integrazioneAi-img-container">
+                <img src="https://braininstitute.it/root/wp-content/uploads/2020/03/Professionisti-641x641.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-9 p-3 p-md-2 Home-Content-container-scleta">   
+            <h3>Carattestistiche tecniche software</h3>
+        </div>
+
+        <div class="col-12 col-md-11 col-lg-11 col-xxl-9 p-3 Home-Content-container-vantaggi">
+
+            <div class="grid-container p-3 p-md-5">
+                <div class="img-container-grid">
+                    <div class="img-container-circle">
+                        <img src="../../includes/images/icone/polmoni.png" alt="" width="30px" height="30px">
+                    </div>
+                </div>
+                <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
+
+                <button class="arrow-button">Scopri di più</button>
+            </div>
+            
+            <div class="grid-container p-3 p-md-5">
+                <div class="img-container-grid">
+                    <div class="img-container-circle">
+                        <img src="../../includes/images/icone/polmoni.png" alt="" width="30px" height="30px">
+                    </div>
+                </div>
+                <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
+
+                <button class="arrow-button">Scopri di più</button>
+            </div>
+            
+            <div class="grid-container p-3 p-md-5">
+                <div class="img-container-grid">
+                    <div class="img-container-circle">
+                        <img src="../../includes/images/icone/polmoni.png" alt="" width="30px" height="30px">
+                    </div>
+                </div>
+                <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
+
+                <button class="arrow-button">Scopri di più</button>
+            </div>
+
+            <div class="grid-container p-3 p-md-5">
+                <div class="img-container-grid">
+                    <div class="img-container-circle">
+                        <img src="../../includes/images/icone/polmoni.png" alt="" width="30px" height="30px">
+                    </div>
+                </div>
+                <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
+            
+                <button class="arrow-button">Scopri di più</button>
+            </div>
+
+            <div class="grid-container p-3 p-md-5">
+                <div class="img-container-grid">
+                    <div class="img-container-circle">
+                        <img src="../../includes/images/icone/polmoni.png" alt="" width="30px" height="30px">
+                    </div>
+                </div>
+                <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
+               
+                <button class="arrow-button">Scopri di più</button>
+            </div>
+
+            <div class="grid-container p-3 p-md-5">
+                <div class="img-container-grid">
+                    <div class="img-container-circle">
+                        <img src="../../includes/images/icone/polmoni.png" alt="" width="30px" height="30px">
+                    </div>
+                </div>
+                <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
+               
+                <button class="arrow-button">Scopri di più</button>
+            </div>
+
+        </div>
+
+        <div class="col-md-12 p-3 p-md-5 d-flex justify-content-center align-items-center home-content-demo">
+            <div class="col-12 col-md-12 col-lg-10 col-xxl-5 p-3 p-md-5 demo-descrizione">
+                <h3>Prova BioVitalAge</h3>
+                <h5>Richiedi la Demo Gratuita Adesso!</h5>
+                <p class="col-12 col-md-8">
+                    Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. In et placeat praesentium
+                    inventore ratione. Eius quidem fuga nam
+                    expedita perspiciatis qui quos, consequuntur 
+                    eveniet laborum nemo, obcaecati, exercitationem tempore iusto?
+                </p>
+                <div class="p-0 d-flex justify-content-center align-items-center button-container-demo">
+                    <button class="button" onclick="window.location = '../../url/contattaci/contattaci.html';" >Inizia la prova GRATUITA!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+    
+    </section>
+
+    
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

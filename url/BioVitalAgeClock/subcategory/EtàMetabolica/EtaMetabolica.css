@@ -1,0 +1,1054 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+    --dark1: #0c042c; 
+    --dark2: #0c214b; 
+    --light1: #c3ccd4; 
+
+    --neutral-gray: #b0b8c1;
+    --neutral-bg-color: rgba(176, 184, 193, 0.2);
+    --neutral-bg-color-contrast: rgba(124, 81, 149, 0.2); 
+    
+    --contrast-color: #3a255d;
+    --contrast-color-shadow: #3b255d2c; 
+    --contrast-color2: #6a2dcc; 
+    --positive-color: #2ac670; 
+            
+    --tittle1: whitesmoke; 
+    --tittle2: #2ac4dd; 
+
+    --circle-color-shadow: rgba(42, 196, 221,0.15);
+    --circle-color-shadow-two: rgba(42, 196, 221,0.05)
+}
+
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+* h3{
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--tittle2);
+    text-align: center;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+* h3.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+
+/* Home Section Style */
+.Home_Section-tittle{
+    position: relative;
+    height: 300px;
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://biomedia.net/wp-content/uploads/2024/09/AdobeStock_783974597-scaled.jpeg);
+}
+.backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.Home_Section-tittle h3{
+    margin-top: 5rem;
+    color: var(--tittle1);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 40%;
+    z-index: 3;
+} 
+
+
+.home_section-presentation{
+   margin: auto;
+   flex-wrap: wrap;
+}
+.home_presentation-img_container img{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+.home_presentation-description h3{
+    color: var(--tittle1);
+    font-size: 35px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.home_presentation-description h3 span,
+.home_section-etaBilogica h3 span,
+.Home-content-container-integrazioneAi span,
+.Home-content-container-integrazioneAitwo span,
+.Funzionalità-title span{
+    color: var(--tittle2);
+}
+.home_section-etaBilogica h3,
+.Home-content-container-integrazioneAi h3,
+.Home-content-container-integrazioneAitwo h3,
+.Funzionalità-title h3{
+    color: var(--tittle1);
+    font-size: 35px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+/* Contenitore Video */
+.contenitore-video{
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+video{
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+.backdrop{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.Home-content-Intro{
+    width: 100%;
+    padding: 0px;
+    margin: auto;
+    position: relative;
+}
+.Home-content-Intro h3{
+    color: var(--tittle1);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 80%;
+}
+.Home-content-Intro h3 span{
+    color: var(--tittle1);
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    padding-top: 8px;
+}
+.Home-content-Intro p{
+    color: var(--light1);
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-top: -2rem;
+}
+.playButton{
+    background-color: var(--neutral-bg-color);
+    border: 4px solid var(--tittle2);
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+
+
+
+
+/* Stile per la modale */
+.video-modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.video-modal-content {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 90%;
+    max-height: 90%;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+.home_section-etaBilogica{
+    margin: -1rem auto 0rem auto;
+}
+.marcatore{
+    color: var(--tittle2);
+    font-size: 20px;
+}
+.card-container-etaBiologica{
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+}
+.card-etaBiologica{
+    background-color: rgba(176, 184, 193, 0.2);
+    border-radius: 4px;
+    width: 29rem;
+    height: 35rem;
+}
+.img-container-etaBiologica{
+    background-color: rgba(42, 196, 221,0.05);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+.img-container-circle{
+    background-color: rgba(42, 196, 221,0.15);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.card-container-etaBiologica p span{
+    color: var(--tittle2); 
+    font-style: italic;
+}
+
+
+
+
+
+.Home-content-container-integrazioneAi{
+    margin: 0rem auto -1rem auto;
+}
+.integrazioneAi-img-container img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.integrazioneAi-description p{
+    padding-right: 12px;
+}
+.Home-content-container-integrazioneAitwo{
+    margin: -5rem auto 0rem auto;
+}
+.integrazioneAi-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12px;
+}
+.integrazioneAi-description-two{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+.Funzionalità-title,
+.Funzionalità-title-2{
+    margin: auto; 
+    margin-top: 2rem;
+}
+.Funzionalità-title h3,
+.Funzionalità-title-2 h3{
+    color: var(--tittle2);
+    font-size: 35px;
+    font-weight: 700;
+    padding: 12px;
+}
+.btn-container-carousel,
+.btn-container-carousel-2{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+}
+.btn-container-carousel button,
+.btn-container-carousel-2 button{
+    height: 2.5rem;
+    width: 4rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--contrast-color2);
+    color: var(--tittle1);
+}
+
+
+
+
+
+/* Carosello Funzionalità */
+.ElenzoFunzionalità-Carousel-container {
+    margin: auto;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    padding: 10px;
+}
+.card-carousel-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll; 
+    padding-bottom: 20px;
+    width: 100%;
+}
+#btn-left,
+#btn-right {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--contrast-color);
+    color: var(--tittle1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+#btn-left:hover,
+#btn-right:hover {
+    background-color: var(--contrast-color2);
+}
+.card-carousel-container::-webkit-scrollbar {
+    height: 0.6rem; 
+}
+.card-carousel-container::-webkit-scrollbar-track {
+    background-color: var(--neutral-bg-color);
+    border-radius: 4px;
+}
+.card-carousel-container::-webkit-scrollbar-thumb {
+    background-color: var(--contrast-color2); 
+    border-radius: 4px;
+}
+.card-carousel {
+    background-color: var(--neutral-bg-color);
+    height: 31rem;
+    min-width: 450px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.img-card-carousel-container{
+    width: 100%;
+    height: 40%;
+}
+.img-card-carousel-container img{
+    width: 100%;
+    height: auto;
+}
+.card-carousel-description{
+    height: 50%;
+    width: 100%;
+    padding: 20px;
+}
+#carousel-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-carousel-description .marcatore{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+.card-carousel-description h3{
+    text-align: left;
+    color: var(--tittle1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/* Teraphy */
+#percorsi{
+    height: 3rem;
+    margin-top: 1rem;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#teraphy{
+    margin-bottom: 2rem;
+}
+
+
+/*  Perchè Noi  */
+.Home-Content-container-scleta{
+    margin: 2rem auto 0rem auto;
+}
+.Home-Content-container-scleta h3{
+    text-align: center;
+    color: var(--tittle2);
+    font-size: 35px;
+    font-weight: 700;
+    font-family: system-ui;
+
+}
+.Home-Content-container-scleta p{
+    text-align: center;
+    padding: 20px;
+}
+.Home-Content-container-vantaggi{
+    margin: auto;
+    gap: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+}
+.grid-container{
+    background-color: rgba(176, 184, 193, 0.2);
+    width: 100%;
+    border-radius: 4px;
+    transition: all 0.2s cubic-bezier(.215, .61, .355, 1);
+}
+.grid-container:hover{
+    background-color: var(--neutral-bg-color-contrast);
+}
+.grid-container h3{
+    color: var(--tittle1);
+    font-size: 35px;
+    font-weight: 400;
+    font-family: system-ui;
+    margin-top: 1rem;
+    text-align: left;
+    padding-bottom: 8px;
+
+}
+.img-container-grid{
+    background-color: rgba(42, 196, 221,0.05);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.img-container-circle{
+    background-color: rgba(42, 196, 221,0.15);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+
+
+
+/* Demo */
+.home-content-demo{
+    background-color: rgba(124, 81, 149, 0.2); 
+    margin-top: 2rem;
+}
+.demo-descrizione{
+    margin-left: -1rem;
+}
+.demo-descrizione h5{
+    padding: 10px;
+    text-align: center;
+    color: var(--tittle1);
+}
+.demo-descrizione h3{
+    text-align: center;
+    color: var(--tittle2);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: system-ui;
+}
+.demo-descrizione p{
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    margin: auto;
+}
+.button-container-demo{
+    margin-top: 2rem;
+    gap: 10px;
+}
+.home-content-demo .button-style{
+    padding: 10px;
+    width: 18rem;
+}
+#button-funz{
+    width: 24rem;
+    padding: 8px;
+}
+.form-richiedi{
+    border-left: 5px solid var(--neutral-bg-color-contrast);
+}
+.form-richiedi h3{
+    color: var(--tittle1);
+    font-size: 35px;
+    text-align: left;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+}
+.form-richiedi input{
+    display: block;
+    width: 30rem;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    outline-color: var(--contrast-color2);
+    border: none;
+}
+.form-richiedi select{
+    width: 30rem;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.form-richiedi .privacy{
+    padding: 10px;
+}
+.button-style{
+    height: 3rem;
+}
+
+#mobile-version{
+    display: none;
+}
+iframe{
+    width: 860px;
+    height: 415px;
+}
+#playButton img{
+    height: 45px;
+    width: 45px;
+}
+
+@media (max-width: 768px) {
+  .card-etaBiologica{
+    height: 18rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-etaBiologica{
+    height: 24rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .Home_Section-tittle{
+        height: 150px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 25px;
+        min-width: 100%;
+    } 
+    .home_presentation-img_container img{
+        height: auto;
+        border-radius: 4px;
+    }
+    #desktop{
+        display: none;
+    }  
+    #mobile-version{
+        display: block;
+        font-size: 20px;
+    }
+    .home_presentation-description p:last-of-type{
+        display: none;
+    }
+    .mobile-adapter{
+        margin-top: -1rem;
+    }
+    #percorsi{
+        height: 2rem;
+        width: 10rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+    .marcatore{
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    }
+    .home_section-etaBilogica h3{
+        font-size: 20px;
+        margin-bottom: -1.5rem;
+    }
+   
+    .img-container-circle img{
+        width: 25px;
+        height: 25px;
+    }
+    .Home-content-container-integrazioneAi{
+        flex-direction: column;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .Home-content-container-integrazioneAi h3,
+    .Home-content-container-integrazioneAitwo h3{
+        font-size: 20px;
+    }
+    .integrazioneAi-img-container{
+        border-radius: 4px;
+    }
+    .Home-content-container-integrazioneAitwo{
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /* Video container */
+    .contenitore-video{
+        height: 270px;
+    }
+    video{
+        width: 150%;
+    }
+    .Home-content-Intro h3{
+        font-size: 20px;
+    }
+    .Home-content-Intro p{
+        display: none;
+    }
+    .playButton{
+        height: 40px;
+        width: 40px;
+    }
+    #playButton img{
+        width: 25px;
+        height: 25px;
+    }
+    iframe{
+        width: 260px;
+        height: 200px;
+    }
+
+
+    /* Caroselli */
+    .Funzionalità-title{
+        flex-direction: column;
+    }
+    .Funzionalità-title h3,
+    .Funzionalità-title-2 h3{
+        font-size: 22px;
+    }
+    .btn-container-carousel,
+    .btn-container-carousel-2{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+        padding-left: 14px;
+    }
+    .btn-container-carousel button,
+    .btn-container-carousel-2 button{
+        height: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .ElenzoFunzionalità-Carousel-container {
+        height: 405px;
+    }
+    .card-carousel {
+        background-color: var(--neutral-bg-color);
+        height: 340px;
+        min-width: 290px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    .card-carousel-description{
+        height: 60%;
+        padding: 15px;
+        width: 100%;
+        transform: translate(0%, -5%);
+    }
+
+    /* Teraphy */
+    #teraphy{
+        margin-top: 1rem;
+    }
+    #teraphy .integrazioneAi-img-container img{
+        border-radius: 4px;
+        margin-top: -1rem;
+    }
+
+    /* Scelta */
+   .Home-Content-container-scleta{
+        margin: 0rem auto 1rem auto;
+    }
+    .Home-Content-container-scleta h3{
+        font-size: 22px;
+    }
+    .Home-Content-container-scleta p{
+        display: none;
+    }
+    .Home-Content-container-vantaggi{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-container{
+        width: 100%;
+    }
+    .grid-container h3{
+        font-size: 20px;
+        padding-bottom: 0;
+    } 
+    .grid-container .arrow-button{
+        padding-bottom: 10px;
+    }
+    .img-container-circle img{
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Demo */
+    .demo-descrizione h3{
+        font-size: 22px;
+    }
+    .demo-descrizione h5{
+        font-size: 18px;
+    }
+    .button-container-demo .button-style{
+        width: 12rem;
+        height: 2rem;
+        padding: 0;
+    }
+    .button-container-demo{
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+
+    .Home_Section-tittle{
+        height: 220px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+        min-width: 100%;
+    } 
+    .home_section-presentation{
+        flex-direction: column;
+    }
+    .home_section-etaBilogica{
+        margin-top: 1rem;
+        margin-left: 2.2rem;
+        margin-bottom: -3rem;
+    }
+    .card-etaBiologica{
+        width: 100%;
+    }
+
+
+    .Home-content-container-integrazioneAi{
+        flex-direction: column-reverse;
+    }
+    .Home-content-container-integrazioneAitwo{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .contenitore-video{
+        height: 400px;
+    }
+    .Home-content-Intro H3{
+        font-size: 28px;
+        min-width: 30rem;
+    }
+    .Home-content-Intro p{
+        min-width: 30rem;
+    }
+    .playButton{
+        height: 60px;
+        width: 60px;
+    }
+    iframe{
+        width: 500px;
+        height: 300px;
+    }
+
+
+    .Funzionalità-title{
+        padding: 50px;
+        flex-direction: column;
+    }
+    .Funzionalità-title h3{
+        font-size: 28px
+    }
+
+    .btn-container-carousel,
+    .btn-container-carousel-2{
+        transform: translate(-240%, 0%);
+    }
+    .card-carousel-container{
+        padding: 0px;
+        width: 94%;
+    }
+    .card-carousel{
+        height: 30rem;
+        margin-bottom: 1rem;
+    }
+
+    .Home-Content-container-vantaggi{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Home-Content-container-scleta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Home-Content-container-scleta h3{
+        font-size: 28px;
+        max-width: 60%;
+    }
+    .Home-Content-container-vantaggi h3{
+        font-size: 25px;
+    }
+    .home-content-demo h3{
+        font-size: 28px;
+    }
+    
+    
+
+
+    
+}
+
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+        min-width: 100%;
+    } 
+    .home_presentation-description h3{
+        font-size: 25px;
+    }
+    .home_presentation-description p:last-of-type{
+        display: none;
+    }
+    .home_section-etaBilogica{
+        margin-top: 1rem;
+    }
+    .home_section-etaBilogica h3{
+        font-size: 25px;
+    }
+    .marcatore{
+        font-size: 20px;
+    }
+    .card-etaBiologica{
+        width: 30%;
+        height: 25rem;
+        overflow: scroll;
+    }
+    .img-container-circle img{
+        width: 30px;
+    }
+    .Home-content-container-integrazioneAi{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .Home-content-container-integrazioneAitwo{
+        margin-bottom: 2rem;
+    }
+    .Home-content-container-integrazioneAi h3{
+        font-size: 25px;
+    }
+    .Home-content-container-integrazioneAi p:last-of-type{
+        display: none;
+    }
+    .Home-content-container-integrazioneAitwo h3{
+        font-size: 25px;
+    }
+    .contenitore-video{
+        height: 400px;
+    }
+    .Home-content-Intro h3{
+        font-size: 25px;
+    }
+    .playButton img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .Funzionalità-title h3{
+        font-size: 25px;
+    }
+    .card-carousel{
+        height: 30rem;
+    }
+    .card-carousel-description{
+        margin-bottom: 1rem;
+    }
+    .Home-Content-container-scleta h3{
+        font-size: 28px;
+    }
+    .Home-Content-container-vantaggi{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Home-Content-container-vantaggi h3{
+        font-size: 25px;
+    }
+    .demo-descrizione h3{
+        font-size: 28px;
+    }
+
+}
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 30px;
+        min-width: 100%;
+    } 
+    .home_presentation-description h3{
+        font-size: 28px;
+    }
+    .home_section-presentation{
+        min-width: 95%;
+    }
+    .home_section-presentation p:last-of-type{
+        display: none;
+    }
+
+    .home_section-etaBilogica{
+        min-width: 82%;
+    }
+    .card-container-etaBiologica{
+        flex-wrap: nowrap;
+        max-width: 88%;
+    }
+    .Home-content-container-integrazioneAi,
+    .Home-content-container-integrazioneAitwo{
+        min-width: 95%;
+    }
+    .Home-content-container-integrazioneAi p:last-of-type{
+        display: none;
+    }
+    
+    .Funzionalità-title{
+        min-width: 85%;
+    }
+    .ElenzoFunzionalità-Carousel-container{
+        min-width: 85%;
+    }
+    .Home-Content-container-vantaggi{
+        min-width: 84%;
+    }
+
+    .demo-descrizione{
+        min-width: 60%;
+    }
+
+
+}
+
+
+@media (min-width: 2560px) {
+    .card-etaBiologica{
+        width: 25.5%;
+    }
+}
+
