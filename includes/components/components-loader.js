@@ -1,6 +1,6 @@
 $(function () {
     // Carica la navbar
-    $("#navbar-placeholder").load("/BioVitalyAge-Website/includes/components/NavBar/navbar.html", function () {
+    $("#navbar-placeholder").load("/BVA-WebSite/includes/components/NavBar/navbar.html", function () {
         const navbar = document.getElementById('navbar');
         const navbarMobile = document.getElementById('navBarMobile');
 
@@ -59,7 +59,7 @@ $(function () {
     });
 
     // Carica il footer
-    $("#footer-placeholder").load("/BioVitalyAge-Website/includes/components/Footer/footer.html", function () {
+    $("#footer-placeholder").load("/BVA-WebSite/includes/components/Footer/footer.html", function () {
         const yearSpan = document.getElementById("current-year");
         if (yearSpan) {
             yearSpan.textContent = new Date().getFullYear();

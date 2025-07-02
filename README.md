@@ -35,4 +35,4 @@ To run the website locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Biovitalage/BioVitalyAge-Website.git
+   git clone https://github.com/Biovitalage/BVA-WebSite.git
