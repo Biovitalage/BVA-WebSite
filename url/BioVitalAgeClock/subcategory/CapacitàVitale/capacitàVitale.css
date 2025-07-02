@@ -55,6 +55,100 @@ body{
 
 
 /* Home Section Style */
+/* Home content container style */
+.home_section-etaBilogica{
+    padding: 8rem 2rem !important;
+}
+
+.Home-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2))
+}
+
+.section-1{
+    background: var(--dark2) !important;
+    padding: 8rem 2rem !important;
+}
+
+.section-2{
+    background: var(--contrast-color) !important;
+    padding: 10rem 2rem !important;
+}
+
+.section-3{
+    background: var(--dark2) !important;
+    padding: 8rem 2rem !important;
+}
+
+.Home-content-container-piattaforma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 3rem auto;
+}
+
+.Home-content-container-piattaforma-core{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 3rem auto;
+}
+
+.title-core{
+    color: var(--tittle1);
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+.Home-content-container-piattaforma h3{
+    font-size: 2.75rem;
+    color: var(--tittle1);
+    text-align: left;
+}
+
+.piattaforma-description p{
+    text-align: justify;
+}
+
+.piattaforma-img img{
+    width: 85%;
+    object-fit: contain;
+    height: max-content;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
+    border-radius: 4px;
+    opacity: 0.9;
+}
+
+.piattaforma-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.piattaforma-img-core img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piattaforma-description-title{
+    color: var(--tittle1);
+    font-size: 35px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
 .Home_Section-tittle{
     position: relative;
     height: 300px;
@@ -96,12 +190,28 @@ body{
     width: 100%;
     height: auto;
 }
+.home_presentation-description{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+}
+.home_presentation-description p{
+    margin-bottom: 0;
+    padding: 0;
+}
 .home_presentation-description h3{
     color: var(--tittle1);
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 400;
     text-align: left;
-    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+.marcatore{
+    color: var(--tittle2);
+    font-size: 20px;
+    margin-bottom: 1rem !important;
 }
 
 .home_presentation-description h3 span,
@@ -120,6 +230,19 @@ body{
     font-weight: 400;
     text-align: left;
     padding-bottom: 10px;
+}
+
+.img-container-biomarcatore{
+    background-color: rgba(42, 196, 221,0.05);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container-biomarcatore img{
+    width: 100%;
 }
 
 
@@ -227,22 +350,21 @@ video{
 
 
 .home_section-etaBilogica{
-    margin: -1rem auto 0rem auto;
+    margin: 1rem auto 0rem auto;
 }
 .marcatore{
     color: var(--tittle2);
     font-size: 20px;
 }
 .card-container-etaBiologica{
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     margin: auto;
 }
 .card-etaBiologica{
     background-color: rgba(176, 184, 193, 0.2);
     border-radius: 4px;
-    width: 29rem;
-    height: 35rem;
 }
 .img-container-etaBiologica{
     background-color: rgba(42, 196, 221,0.05);
@@ -487,6 +609,22 @@ video{
     border-radius: 4px;
     transition: all 0.2s cubic-bezier(.215, .61, .355, 1);
 }
+
+.mobile-hidden{
+    display: block;
+}
+
+.mobile-visible{
+    display: none;
+}
+
+.container-score-mobile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
 .grid-container:hover{
     background-color: var(--neutral-bg-color-contrast);
 }
@@ -502,8 +640,8 @@ video{
 }
 .img-container-grid{
     background-color: rgba(42, 196, 221,0.05);
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,14 +649,17 @@ video{
 }
 .img-container-circle{
     background-color: rgba(42, 196, 221,0.15);
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
 }
 
+.img-container-circle img{
+    width: 70%;
+}
 
 
 
@@ -607,19 +748,175 @@ iframe{
     width: 45px;
 }
 
-@media (max-width: 768px) {
-  .card-etaBiologica{
-    height: 18rem;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Domande */
+.faq-container{
+    margin: auto;
+    background-color: var(--neutral-bg-color-contrast);
+    padding: 8rem 2rem !important;
+}
+.faq-container h3{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    color: var(--tittle2);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: "Raleway", sans-serif;
+}
+.container-btn-domanda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#domanda{
+    width: 16rem;
+    padding: 8px;
+    height: 3rem;
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+#accordion-item{
+    background: none;
+    border: none;
+}
+#accordion-item h2{
+    background-color: var(--neutral-bg-color);
+    border: none;
+}
+.accordion-btn{
+    background: none;
+    border: none;
+    color: var(--tittle1);
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+.accordion-btn{
+    padding: 20px;
+    padding-right: 40px;
+}
+.accordion-btn::after {
+    content: '+';
+    position: absolute;
+    right: 1.5rem;
+    top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
+    border-radius: 40px;
+    background-color: var(--circle-color-shadow);
+    box-shadow: 10px 10px 10px 5px var(--circle-color-shadow-two);
+    width: 30px;
+    height: 30px;
+}
+.accordion-btn:focus {
+    box-shadow: 0 0 0 1px var(--tittle2) !important;
+    border-radius: 4px 4px 0px 0px;
+}
+.accordion-btn.active::after {
+    content: '-';
+}
+.accordion-body{
+    background-color: var(--contrast-color-shadow);
+    color: var(--tittle1);
+    border: 1px solid var(--neutral-bg-color);
 }
 
-@media (max-width: 425px) {
-  .card-etaBiologica{
-    height: 24rem;
+
+
+
+
+
+
+
+
+
+/* ! MEDIA QUERIES */
+@media (max-width: 1024px) {
+   .Home-Content-container-vantaggi{
+      padding: 0;
+   }
+
+  .Home-content-container-piattaforma{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .Home-content-container-piattaforma h3{
+    font-size: 2.2rem;
+    color: var(--tittle1);
+    text-align: center;
+  }
+
+  .second-section{
+    flex-direction: column-reverse;
+  }
+
+  .piattaforma-img img{
+    width: 100%;
+  }
+
+  .mobile-hidden{
+    display: none;
+  }
+
+  .mobile-visible{
+    display: grid;
+  }
+
+  .mobile-visible h3{
+    font-size: 20px !important;
+  }
+
+  .piattaforma-description p:first-child{
+    text-align: center;
+  }
+
+
+  .età-biologica-description{
+    text-align: justify;
+  }
+
+  .card-container-etaBiologica{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .Home-content-container-piattaforma h3{
+        font-size: 2rem;
+        text-align: center;
+    }
 
     .Home_Section-tittle{
         height: 150px;
@@ -659,7 +956,6 @@ iframe{
     }
     .home_section-etaBilogica h3{
         font-size: 20px;
-        margin-bottom: -1.5rem;
     }
    
     .img-container-circle img{
@@ -682,6 +978,10 @@ iframe{
         flex-direction: column-reverse;
         margin-top: 1rem;
         margin-bottom: 2rem;
+    }
+    .card-container-etaBiologica{
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
 
@@ -824,11 +1124,6 @@ iframe{
     .home_section-presentation{
         flex-direction: column;
     }
-    .home_section-etaBilogica{
-        margin-top: 1rem;
-        margin-left: 2.2rem;
-        margin-bottom: -3rem;
-    }
     .card-etaBiologica{
         width: 100%;
     }
@@ -934,11 +1229,6 @@ iframe{
     .marcatore{
         font-size: 20px;
     }
-    .card-etaBiologica{
-        width: 30%;
-        height: 25rem;
-        overflow: scroll;
-    }
     .img-container-circle img{
         width: 30px;
     }
@@ -1018,7 +1308,7 @@ iframe{
     }
     .card-container-etaBiologica{
         flex-wrap: nowrap;
-        max-width: 88%;
+        max-width: 100%;
     }
     .Home-content-container-integrazioneAi,
     .Home-content-container-integrazioneAitwo{
@@ -1044,11 +1334,3 @@ iframe{
 
 
 }
-
-
-@media (min-width: 2560px) {
-    .card-etaBiologica{
-        width: 25.5%;
-    }
-}
-
