@@ -126,4 +126,17 @@
         width: 100% !important;
         height: 100% !important;
     }
+
+    .img-profile-container-page{
+        width: 250px !important;
+    }
+
+    .img-profile-container-page img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .piattaforma-description{
+        padding: 3rem !important;
+    }
 }
