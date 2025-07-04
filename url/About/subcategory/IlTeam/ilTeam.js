@@ -1,12 +1,12 @@
 function initAnimations() {
   gsap.registerPlugin(ScrollTrigger);
 
-  // stato iniziale
+  // stato iniziale nascosto
   gsap.set(".element", { y: -100, opacity: 0 });
 
   ScrollTrigger.batch(".element", {
     start: "top center",
-    end: "bottom center",
+    once: true, // <── anima una sola volta e poi disabilita il trigger
     onEnter: (batch) =>
       gsap.to(batch, {
         y: 0,
@@ -15,15 +15,11 @@ function initAnimations() {
         duration: 1,
         ease: "power2.out",
       }),
-    onLeaveBack: (batch) =>
-      gsap.to(batch, {
-        y: -100,
-        opacity: 0,
-        stagger: 0.15,
-        duration: 1,
-        ease: "power2.in",
-      }),
+    // niente onLeaveBack: il trigger è già morto
   });
+
+  // assicurati che ScrollTrigger calcoli bene le posizioni
+  ScrollTrigger.refresh();
 }
 
 fetch("data/employees.json")
