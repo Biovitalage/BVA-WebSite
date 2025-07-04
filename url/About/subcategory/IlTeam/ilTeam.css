@@ -1,0 +1,107 @@
+/* Team */
+.team-member-container {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity .3s ease-out, transform .3s ease-out;
+}
+
+#team-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    max-width: 1440px;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.team-member{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min-content;
+    gap: 20px;
+}
+
+/* Info Profile */
+.team-member-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--tittle1);
+    transition: color 0.3s ease;
+}
+
+.team-member-link:hover{
+    color: var(--tittle2);
+}
+
+.info-profile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Img Profile */
+.img-profile-container{
+    width: 350px;
+    height: 350px;
+}
+
+.img-profile-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--contrast-color2);
+    border-radius: 50%;
+}
+
+
+
+
+/* Profile */
+.section-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container{
+    padding: 8rem 0 !important;
+}
+
+.profile-name-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.img-profile-container-page{
+    width: 350px !important;
+    height: 350px !important;
+}
+
+.img-profile-container-page img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+
+
+
+
+/* ! Responsive */
+@media (max-width: 768px) {
+    #team-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

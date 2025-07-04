@@ -1,0 +1,38 @@
+{
+  "1": {
+    "id": "1",
+    "name": "Manuel",
+    "cognome": "Mersini",
+    "avatar": "/BVA-WebSite/includes/images/teams/manuel-mersini-avatar.jpg",
+    "avatarThumb": "/BVA-WebSite/includes/images/teams/manuel-mersini-avatarThumb.png",
+    "breveBio": "CEO",
+    "bio": "Manuel Mersini è CEO e co-fondatore di BioVitalAge. Ingegnere biomedico con una formazione accademica di eccellenza e un mindset internazionale, Manuel ha maturato esperienze nella gestione di progetti di ricerca, nello sviluppo di sistemi di intelligenza artificiale applicati alla sanità. Ha collaborato con centri di ricerca e istituzioni sanitarie, tra cui il Policlinico di Bari e il Sant’Andrea Longevity Center, contribuendo a progetti volti a migliorare la qualità della vita dei pazienti. <br> Con approccio propositivo, Manuel integra la ricerca scientifica con l’innovazione tecnologica per creare modelli di cura più sostenibili e accessibili. La sua visione è portare BioVitalAge al servizio di cliniche, specialisti e cittadini, rendendo la prevenzione avanzata accessibile e concreta. <br> In BioVitalAge guida alla costruzione di partnership e il coordinamento delle attività di sviluppo, puntando a posizionare l’azienda come punto di riferimento nel panorama della longevity."
+  },
+  "2": {
+    "id": "2",
+    "name": "Luigi",
+    "cognome": "Aprile",
+    "avatar": "/BVA-WebSite/includes/images/teams/luigi_aprile_avatar.jpeg",
+    "avatarThumb": "/BVA-WebSite/includes/images/teams/luigi_aprile_avatar_thumb.png",
+    "breveBio": "Chief Longevity Officer",
+    "bio": "Il Dott. Luigi Aprile è il Chief Longevity Officer di BioVitalAge. Il Dott. Aprile ha conseguito la Laurea in Medicina e Chirurgia e il Diploma di Specializzazione in Reumatologia e in Farmacologia Clinica. <br> Per diversi anni ha fatto parte della Commissione d’Esame di Farmacologia presso la Facoltà di Medicina dell’Università degli Studi di Bari e ha svolto attività didattica come docente presso la Scuola di Specializzazione in Farmacologia Clinica. <br> È stato presidente dell’AMISI (Associazione per la Medicina Integrativa e la Sanità Integrata), oltre ad essere autore di numerose pubblicazioni scientifiche. <br> Ha ideato Venere, un gestionale innovativo che costituisce uno dei modelli di cartella clinica più diffusi e apprezzati tra i medici di medicina generale, rappresentando oggi un punto di riferimento per la gestione informatizzata delle attività ambulatoriali e cliniche. <br> Dopo il successo di Venere, ha dato vita a una seconda piattaforma, Biovitalage, dedicata alla longevità e alla medicina preventiva, consolidando così la sua visione di una sanità sempre più evoluta, digitale e centrata sulla persona."
+  },
+  "3": {
+    "id": "3",
+    "name": "Vito",
+    "cognome": "Di Venosa",
+    "avatar": "https://placehold.co/300x300",
+    "avatarThumb": "https://placehold.co/300x300",
+    "breveBio": "Head of Technology",
+    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+  },
+  "4": {
+    "id": "4",
+    "name": "Luigi",
+    "cognome": "Balestrucci",
+    "avatar": "/BVA-WebSite/includes/images/teams/luigi_balestrucci_avatar.jpg",
+    "avatarThumb": "/BVA-WebSite/includes/images/teams/img-luigi.png",
+    "breveBio": "Web Developer",
+    "bio": "Luigi Balestrucci è un Junior Full Stack Developer con una formazione avanzata presso il bootcamp Develhope, dove ha consolidato competenze in HTML, CSS, JavaScript, React, Node.js, TypeScript e Django. Ha partecipato a progetti web complessi, sviluppando applicazioni e piattaforme sia in team che in autonomia, dimostrando di collaborare in modo efficiente con una particolare attenzione al risultato. Tra le sue esperienze figura la collaborazione con SpicySparks per lo sviluppo di applicazioni in React Native e la realizzazione di soluzioni digitali orientate alla gestione di community. <br> Appassionato di innovazione, ama esplorare soluzioni che combinino efficienza e qualità, ed è sempre pronto a contribuire con entusiasmo alla crescita del progetto BioVitalAge e dei suoi valori."
+  }
+}
