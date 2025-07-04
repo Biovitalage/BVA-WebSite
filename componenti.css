@@ -231,6 +231,13 @@ body{
     border-bottom: 2px solid var(--contrast-color2);
 }
 
+.about-mobile.active-clock-mobile{
+    height: 80px;
+    opacity: 1;
+    visibility: visible;
+    border-bottom: 2px solid var(--contrast-color2);
+}
+
 
 .nav-bar-mobile.active {
     left: 0; 
@@ -418,6 +425,11 @@ body{
     width: 10rem;
     transition: all 0.2s cubic-bezier(.215, .61, .355, 1);
 }
+
+.about{
+    left: 0 !important;
+}
+
 .dropdown-menu-clock::after {
     content: "";
     position: absolute;
@@ -434,6 +446,7 @@ body{
     opacity: 1;
     visibility: visible;
 }
+
 
 
 .nav-bar-tittle{
