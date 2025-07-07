@@ -845,6 +845,7 @@ iframe{
 .accordion-body{
     background-color: var(--contrast-color-shadow);
     color: var(--tittle1);
+    font-size: 1.1rem;
     border: 1px solid var(--neutral-bg-color);
 }
 

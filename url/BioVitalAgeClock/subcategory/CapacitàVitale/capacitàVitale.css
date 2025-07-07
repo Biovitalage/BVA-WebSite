@@ -846,6 +846,7 @@ iframe{
     background-color: var(--contrast-color-shadow);
     color: var(--tittle1);
     border: 1px solid var(--neutral-bg-color);
+    font-size: 1.1rem;
 }
 
 
