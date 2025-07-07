@@ -430,6 +430,11 @@ body{
     left: 0 !important;
 }
 
+.users{
+    left: -2rem !important;
+    width: 13rem;
+}
+
 .dropdown-menu-clock::after {
     content: "";
     position: absolute;
