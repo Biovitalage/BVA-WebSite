@@ -874,12 +874,10 @@ footer{
         overflow: hidden;
     }
     * p{
-        font-size: 14px;
         letter-spacing: 0.5px;
-        line-height: 1rem;
     }
     .marcatore {
-        font-size: 14px;
+        font-size: 1.1rem;
         margin-bottom: 0.5rem;
     }
 
@@ -1018,12 +1016,10 @@ footer{
         overflow: hidden;
     }
     * p{
-        font-size: 14px;
         letter-spacing: 0.5px;
-        line-height: 1rem;
     }
     .marcatore {
-        font-size: 14px;
+        font-size: 1.1rem;
         margin-bottom: 0.5rem;
     }
 
