@@ -232,12 +232,18 @@ body{
 }
 
 .about-mobile.active-clock-mobile{
-    height: 80px;
+    height: 100px;
     opacity: 1;
     visibility: visible;
     border-bottom: 2px solid var(--contrast-color2);
 }
 
+.users-mobile.active-clock-mobile{
+    height: 125px;
+    opacity: 1;
+    visibility: visible;
+    border-bottom: 2px solid var(--contrast-color2);
+}
 
 .nav-bar-mobile.active {
     left: 0; 
