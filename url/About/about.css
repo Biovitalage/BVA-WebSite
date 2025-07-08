@@ -85,13 +85,14 @@ body{
 
 .contenitore-video{
     position: relative;
-    height: 600px;
     overflow: hidden;
+    height: 30rem;
 }
 video{
     width: 100%;
-    height: auto;
-    opacity: 0.6;
+    height: 100%;
+    opacity: 0.2;
+    object-fit: cover;
 }
 .backdrop{
     background-color: rgba(0,0,0,0.1);
@@ -106,7 +107,6 @@ video{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: -4rem;
 }
 .contenitore-description h3,
 .contenitore-presentazione-description h3{
@@ -115,12 +115,12 @@ video{
     font-family: "Raleway", sans-serif;
     font-size: 35px;
     font-weight: 500;
+    text-align: justify;
 }
 .contenitore-description p{
     color: var(--light1);
     letter-spacing: 1px;
     line-height: 1.5rem;
-    max-width: 46%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -156,7 +156,6 @@ span{
 
 .home-content-demo{
     background-color: rgba(124, 81, 149, 0.2); 
-    margin-top: -1rem;
     position: relative;
     overflow: hidden;
 }
@@ -172,7 +171,7 @@ span{
 .demo-descrizione h3{
     text-align: center;
     color: var(--tittle2);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     font-family: system-ui;
 }
@@ -210,6 +209,81 @@ span{
     display: none;
 }
 
+/* Report Section Style */
+.section-report{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 8rem 2rem;
+    background-color: var(--dark2);
+    color: var(--tittle1);
+    border-radius: 1rem;
+}
+.section-report-title{
+    max-width: 1024px;
+}
+
+.section-report-title h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: system-ui;
+    text-align: left;
+    color: #2ac4dd;
+}
+
+
+.container-card-report{
+    max-width: 728px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card-report{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: rgba(176, 184, 193, 0.2);
+    border-radius: 0.3rem;
+}
+.card-report-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container-etaBiologica{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1024px;
+    gap: 20px;
+    margin: auto;
+}
+.card-etaBiologica{
+    background-color: rgba(176, 184, 193, 0.2);
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -223,11 +297,11 @@ span{
         font-size: 25px;
     } 
     video{
-        width: 150%;
+        object-fit: cover;
     }
     .contenitore-video{
-        height: 270px;
         margin-bottom: 1.5rem;
+        height: 40rem;
     }
     .contenitore-description{
         margin: auto;
@@ -235,8 +309,8 @@ span{
     .contenitore-description h3{
         font-size: 20px;
     }
-    .contenitore-description p{
-        min-width: 18rem;
+    .card-container-etaBiologica{
+        grid-template-columns: 1fr;
     }
     .desktop{
         display: none;
@@ -286,15 +360,9 @@ span{
     .Home_Section-tittle h3{
         margin-top: 2rem;
         font-size: 28px;
-    } 
-    .contenitore-video{
-        height: 400px;
     }
     .contenitore-description h3{
         font-size: 28px;
-    }
-    .contenitore-description p{
-        min-width: 30rem;
     }
     .contenitore-presentazione{
         flex-direction: column;
@@ -305,6 +373,10 @@ span{
     .contenitore-presentazione .button-style{
         width: 14rem;
     }
+    .contenitore-video{
+        height: 40rem;
+    }
+
     #correzione{
         flex-direction: column-reverse;
     }
@@ -329,6 +401,10 @@ span{
     .backdrop{
         display: none;
     }
+
+    .card-container-etaBiologica{
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -342,15 +418,9 @@ span{
         margin-top: 2rem;
         font-size: 30px;
         text-align: center;
-    } 
-    .contenitore-video{
-        height: 500px;
     }
     .contenitore-description h3{
         font-size: 28px;
-    }
-    .contenitore-description p{
-        min-width: 30rem;
     }
     .contenitore-presentazione p:last-of-type{
         display: none;
@@ -366,7 +436,7 @@ span{
         margin-left: 0rem;
     }
     .demo-descrizione h3{
-        font-size: 30px;
+        font-size: 20px;
     }
     .button-container-demo{
         flex-direction: column;
@@ -380,12 +450,6 @@ span{
         margin-top: 2rem;
         font-size: 30px;
     } 
-    .contenitore-description{
-        min-width: 80%;
-    }
-    .contenitore-presentazione{
-        min-width: 90%;
-    }
     .demo-descrizione{
         margin-left: -38rem;
     }
