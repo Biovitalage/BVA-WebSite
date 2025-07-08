@@ -57,12 +57,13 @@ body{
 /* Home Section Style */
 .Home_Section-tittle{
     position: relative;
-    padding: 8rem 0;
+    padding: 8rem 1rem;
     background-color: var(--dark2);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     background-image: url(https://biomedia.net/wp-content/uploads/2024/09/AdobeStock_783974597-scaled.jpeg);
 }
 .backdrop{
@@ -87,9 +88,9 @@ body{
 }
 .Home_Section-tittle p{
     color: var(--tittle1);
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-align: center;
-    max-width: 40%;
+    max-width: 50%;
     z-index: 3;
 }
 
@@ -128,6 +129,132 @@ body{
     text-align: left;
     padding: 4rem 0;
 }
+
+
+
+
+
+
+
+/* Funzionalità */
+.section-funzionalità{
+    padding: 8rem 0;
+    background: var(--contrast-color);
+    gap: 2rem;
+}
+
+.container-funzionalità{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.funzionalità-card{
+    background-color: var(--neutral-bg-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 54rem;
+    gap: 1rem;
+}
+
+.funzionalità-card h3{
+    color: var(--tittle1);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+}
+
+.funzionalità-card p{
+    color: var(--tittle1);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0;
+}
+
+.funzionalità-card-img{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid var(--contrast-color);
+    background: var(--contrast-color2);
+    overflow: hidden;
+}
+
+.funzionalità-card-img img{
+    width: 70%;
+}
+
+
+
+
+
+
+
+/* Vantaggi */
+.section-vantaggi{
+    padding: 8rem 0;
+    background: var(--contrast-color2);
+    gap: 2rem;
+}
+
+.container-vantaggi ul, li{
+    list-style-type: disc;
+}
+
+.container-vantaggi li{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--tittle1);
+}
+
+.vantaggi-title{
+    margin-bottom: 2rem;
+}
+
+.vantaggi-title h3{
+    color: var(--tittle1);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+.vantaggi-sub-title h4{
+    color: var(--tittle1);
+    font-size: 1.7rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.container-vantaggi{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -622,9 +749,42 @@ iframe{
     width: 45px;
 }
 
+@media (max-width: 1280px) {
+    .container-funzionalità{
+        padding: 0 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .container-vantaggi{
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-funzionalità{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .funzionalità-card{
+        height: 40rem;
+    }
+
+    .funzionalità-card p{
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .container-funzionalità{
+        grid-template-columns: 1fr;
+    }
+
+    
+    .funzionalità-card{
+        height: max-content;
+    }
   .card-etaBiologica{
-    height: 23rem;
+    height: auto;
   }
 
   .img-container-etaBiologica{
@@ -641,24 +801,19 @@ iframe{
     grid-template-columns: 1fr;
   }
 }
-
-@media (max-width: 425px) {
-  .card-etaBiologica{
-    height: 20rem;
-  }
-}
-
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
     .Home_Section-tittle{
-        height: 150px;
         background-size: cover;
     }
     .Home_Section-tittle h3{
         margin-top: 2rem;
         font-size: 25px;
         min-width: 100%;
-    } 
+    }
+    .Home_Section-tittle p{
+        max-width: 100%;
+    }
     .home_presentation-img_container img{
         height: auto;
         border-radius: 4px;
@@ -688,6 +843,16 @@ iframe{
     }
     .home_section-etaBilogica h3{
         font-size: 20px;
+    }
+
+    .vantaggi-title h3{
+        font-size: 1.5rem;
+    }
+    .vantaggi-sub-title h4{
+        font-size: 1.2rem;
+    }
+    .container-vantaggi li{
+        font-size: 1rem;
     }
    
     .img-container-circle img{
@@ -841,7 +1006,6 @@ iframe{
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
 
     .Home_Section-tittle{
-        height: 220px;
         background-size: cover;
     }
     .Home_Section-tittle h3{
@@ -854,7 +1018,6 @@ iframe{
     }
     .home_section-etaBilogica{
         margin-top: 1rem;
-        margin-left: 2.2rem;
     }
     .card-etaBiologica{
         width: 100%;
@@ -1039,7 +1202,6 @@ iframe{
     }
     .card-container-etaBiologica{
         flex-wrap: nowrap;
-        max-width: 88%;
     }
     .Home-content-container-integrazioneAi,
     .Home-content-container-integrazioneAitwo{
