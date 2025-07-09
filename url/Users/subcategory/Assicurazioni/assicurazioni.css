@@ -1,0 +1,120 @@
+/* Assicurazioni */
+.container-assicurazioni{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 8rem 2rem;
+    width: 100%;
+}
+
+.container-assicurazioni-content{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container-assicurazioni-content h3{
+    color: var(--tittle2);
+}
+
+
+
+
+
+
+/* Assicurazioni 2 */
+.container-assicurazioni-content-2-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10rem 2rem;
+    background: var(--contrast-color);
+    width: 100%;
+}
+.container-assicurazioni-content-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    gap: 2rem;
+}
+
+.container-assicurazioni-content-2-text-tittle h3{
+    color: var(--tittle2);
+    text-align: justify;
+}
+
+.container-assicurazioni-content-2-text-description p{
+    text-align: justify;
+}
+
+.container-assicurazioni-content-2-image-img{
+    width: 600px;
+    height: 400px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.container-assicurazioni-content-2-image-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-assicurazioni-content-3-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10rem 2rem;
+    background: var(--contrast-color2);
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* Card Assicurazioni */
+.card-body-assicurazioni{
+    color: var(--tittle1);
+    border: none !important;
+    background: none !important;
+}
+
+.card-body-assicurazioni .card-body{
+    background: rgba(176, 184, 193, 0.2) !important;
+    border: none !important;
+    border-radius: 6px;
+}
+.card-body-assicurazioni .card-body .card-text{
+    color: var(--tittle1) !important;
+    text-align: justify;
+}
+
+.icon-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.list-style{
+    color: var(--light1);
+    list-style: disc;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
