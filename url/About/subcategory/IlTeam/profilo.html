@@ -81,27 +81,39 @@
         </section>
 
         <script>
-            // 1. Leggo l'id dall'URL (es. profile.html?id=42)
+            // 1. Leggo l'id e il tipo dall'URL (es. profilo.html?id=42&type=employee)
             const params = new URLSearchParams(window.location.search);
             const id = params.get('id');
-        
-            // 2. Carico il JSON con tutti i dipendenti
-            fetch('data/employees.json')
+            const type = params.get('type') || 'employee'; // default employee se non specificato
+
+            // 2. Determino il file JSON da caricare
+            let dataFile;
+            if (type === 'advisor') {
+              dataFile = 'data/advisorlist.json';
+            } else {
+              dataFile = 'data/employees.json';
+            }
+
+            // 3. Carico il JSON corretto
+            fetch(dataFile)
               .then(r => r.json())
               .then(data => {
-                const emp = data[id];
-                if (!emp) {
+                const person = data[id];
+                if (!person) {
                   document.body.innerHTML = '<p>Utente non trovato.</p>';
                   return;
                 }
-                // 3. Popolo il DOM
-                document.getElementById('avatar').src = emp.avatar;
-                document.getElementById('name').textContent = emp.name;
-                document.getElementById('cognome').textContent = emp.cognome;
-                document.getElementById('bio').innerHTML  = emp.bio;
+                // 4. Popolo il DOM
+                document.getElementById('avatar').src = person.avatar;
+                document.getElementById('name').textContent = person.name;
+                document.getElementById('cognome').textContent = person.cognome;
+                document.getElementById('bio').innerHTML  = person.bio;
 
                 // ← titolo dinamico
-                document.title = `${emp.name} ${emp.cognome} - ${emp.breveBio}`;
+                document.title = `${person.name} ${person.cognome} - ${person.breveBio}`;
+              })
+              .catch(() => {
+                document.body.innerHTML = '<p>Errore nel caricamento dei dati.</p>';
               });
-          </script>
+        </script>
 </body>

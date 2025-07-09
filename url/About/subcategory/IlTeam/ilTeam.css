@@ -16,6 +16,17 @@
     padding: 6rem 0;
 }
 
+#advisor-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    max-width: 1440px;
+    gap: 40px;
+    padding: 6rem 0;
+    margin: 0 auto;
+}
+
 .team-member{
     display: flex;
     align-items: center;
@@ -23,6 +34,28 @@
     width: min-content;
     gap: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Info Profile */
 .team-member-link{
@@ -49,6 +82,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Img Profile */
 .img-profile-container{
     width: 350px;
@@ -63,6 +110,30 @@
     border-radius: 50%;
     border: 3px solid var(--contrast-color2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -99,6 +170,36 @@
 
 
 
+
+
+
+
+
+
+
+
+
+.banner-container{
+    background-color: var(--contrast-color2);
+    padding: 4rem 0;
+}
+
+.banner-container h3{
+    color: var(--tittle2);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 /* ! Responsive */
 @media screen and (max-width: 1024px) {
     .profile-container{
@@ -112,6 +213,10 @@
 }
 
 @media (max-width: 768px) {
+    #advisor-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     #team-list{
         padding: 4rem 0;
         grid-template-columns: repeat(1, 1fr);

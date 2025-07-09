@@ -21,10 +21,10 @@
     "id": "3",
     "name": "Vito",
     "cognome": "Di Venosa",
-    "avatar": "https://placehold.co/300x300",
-    "avatarThumb": "https://placehold.co/300x300",
+    "avatar": "/BVA-WebSite/includes/images/teams/avatar_vito_di_venosa.jpg",
+    "avatarThumb": "/BVA-WebSite/includes/images/teams/avatar_thumb_vito_di_venosa.png",
     "breveBio": "Head of Technology",
-    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+    "bio": "Vito Di Venosa è uno Junior Web Developer con una formazione trasversale che spazia dallo sviluppo backend con Python e Django fino alle tecnologie frontend come HTML, CSS e JavaScript. Attualmente sta completando gli studi universitari in Informatica per le Aziende Digitali, consolidando le proprie competenze nello sviluppo software grazie anche a corsi avanzati e a progetti pratici, tra cui applicazioni complete con architetture REST API. Appassionato di software architecture, padroneggia principi come MVC, OOP e SOLID, e ha dimostrato grande dimestichezza su strumenti DevOps come Docker e AWS. In BiovitalAge, Vito riveste un ruolo determinate nello sviluppo e nella manutenzione tecnica della piattaforma, supportando l’integrazione di algoritmi AI innovativi."
   },
   "4": {
     "id": "4",
