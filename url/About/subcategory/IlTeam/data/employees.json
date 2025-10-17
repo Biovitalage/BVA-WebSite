@@ -16,23 +16,5 @@
     "avatarThumb": "/BVA-WebSite/includes/images/teams/luigi_aprile_avatar_thumb.png",
     "breveBio": "Chief Longevity Officer",
     "bio": "Il Dott. Luigi Aprile è il Chief Longevity Officer di BioVitalAge. Il Dott. Aprile ha conseguito la Laurea in Medicina e Chirurgia e il Diploma di Specializzazione in Reumatologia e in Farmacologia Clinica. <br> Per diversi anni ha fatto parte della Commissione d’Esame di Farmacologia presso la Facoltà di Medicina dell’Università degli Studi di Bari e ha svolto attività didattica come docente presso la Scuola di Specializzazione in Farmacologia Clinica. <br> È stato presidente dell’AMISI (Associazione per la Medicina Integrativa e la Sanità Integrata), oltre ad essere autore di numerose pubblicazioni scientifiche. <br> Ha ideato Venere, un gestionale innovativo che costituisce uno dei modelli di cartella clinica più diffusi e apprezzati tra i medici di medicina generale, rappresentando oggi un punto di riferimento per la gestione informatizzata delle attività ambulatoriali e cliniche. <br> Dopo il successo di Venere, ha dato vita a una seconda piattaforma, Biovitalage, dedicata alla longevità e alla medicina preventiva, consolidando così la sua visione di una sanità sempre più evoluta, digitale e centrata sulla persona."
-  },
-  "3": {
-    "id": "3",
-    "name": "Vito",
-    "cognome": "Di Venosa",
-    "avatar": "/BVA-WebSite/includes/images/teams/avatar_vito_di_venosa.jpg",
-    "avatarThumb": "/BVA-WebSite/includes/images/teams/avatar_thumb_vito_di_venosa.png",
-    "breveBio": "Head of Technology",
-    "bio": "Vito Di Venosa è uno Junior Web Developer con una formazione trasversale che spazia dallo sviluppo backend con Python e Django fino alle tecnologie frontend come HTML, CSS e JavaScript. Attualmente sta completando gli studi universitari in Informatica per le Aziende Digitali, consolidando le proprie competenze nello sviluppo software grazie anche a corsi avanzati e a progetti pratici, tra cui applicazioni complete con architetture REST API. Appassionato di software architecture, padroneggia principi come MVC, OOP e SOLID, e ha dimostrato grande dimestichezza su strumenti DevOps come Docker e AWS. In BiovitalAge, Vito riveste un ruolo determinate nello sviluppo e nella manutenzione tecnica della piattaforma, supportando l’integrazione di algoritmi AI innovativi."
-  },
-  "4": {
-    "id": "4",
-    "name": "Luigi",
-    "cognome": "Balestrucci",
-    "avatar": "/BVA-WebSite/includes/images/teams/luigi_balestrucci_avatar.jpg",
-    "avatarThumb": "/BVA-WebSite/includes/images/teams/img-luigi.png",
-    "breveBio": "Web Developer",
-    "bio": "Luigi Balestrucci è un Junior Full Stack Developer con una formazione avanzata presso il bootcamp Develhope, dove ha consolidato competenze in HTML, CSS, JavaScript, React, Node.js, TypeScript e Django. Ha partecipato a progetti web complessi, sviluppando applicazioni e piattaforme sia in team che in autonomia, dimostrando di collaborare in modo efficiente con una particolare attenzione al risultato. Tra le sue esperienze figura la collaborazione con SpicySparks per lo sviluppo di applicazioni in React Native e la realizzazione di soluzioni digitali orientate alla gestione di community. <br> Appassionato di innovazione, ama esplorare soluzioni che combinino efficienza e qualità, ed è sempre pronto a contribuire con entusiasmo alla crescita del progetto BioVitalAge e dei suoi valori."
   }
 }

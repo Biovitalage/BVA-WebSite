@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BioVitalAge®</title>
     <link rel="shortcut icon" href="/BVA-WebSite/includes/images/icone/Favicon.png" type="image/x-icon">
+
+    <!-- Css -->
     <link rel="stylesheet" href="componenti.css">
     <link rel="stylesheet" href="homePage.css">
     
-
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-   
-    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Js -->
@@ -23,8 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -52,7 +50,7 @@
                             xmlns="http://www.w3.org/2000/svg"
                             class="button__icon-svg"
                             width="10"
-                          >
+                            >
                             <path
                               d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
                               fill="currentColor"
@@ -113,13 +111,13 @@
 
                 <div class="col-md-9 d-flex flex-column align-items-center justify-content-center Home-content-Intro">
 
-                    <div class="d-flex flex-column align-items-start gap-4">
+                    <div class="container-content-gif">
                         
-                        <h3 class="col-md-12 text-start">
+                        <h3 class="col-md-12 title-gif">
                             BioVitalAge, l’assistente digitale a supporto del professionista
                         </h3>
                         <p class="subtitle">Un software innovativo che sfrutta l'intelligenza artificale</p>
-                        <p class="col-md-12 text-justify">
+                        <p class="col-md-12 text-intro">
                             BioVitalAge è una piattaforma innovativa che combina la potenza dell’intelligenza artificiale con una gestione
                             clinica completa e intuitiva. Non si tratta solo di un software per archiviare dati, ma di un vero e proprio
                             ecosistema digitale pensato per migliorare la qualità della cura e guidare ogni paziente in un percorso di benessere
@@ -252,7 +250,7 @@
                 <h3>Perché sceglierci ? </h3>
             </div>
 
-            <div class="col-12 col-md-12 col-lg-12 p-xxl-5 flex-wrap Home-Content-container-vantaggi">
+            <div class="col-12 col-md-12 col-lg-11 p-xxl-5 flex-wrap Home-Content-container-vantaggi">
                 <div class="grid-container position-relative">
                     <div class="p-4">
                         <div class="img-container-grid">
@@ -376,133 +374,117 @@
             </div>
         </div>
 
-        <div class="col-md-12 faq-container">
+        <div class="col-md-12 faq-container" style="background: none; height: 600px;">
             <h3>Domande più frequenti</h3>
 
-            <div class="accordion" id="accordionExample">
+            <div class="accordion" id="accordionExample" style="height: 400px;">
 
-                <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
-                  <h2 class="accordion-header" id="accordion-header" >
-                    <button class="accordion-btn" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" >
-                        La piattaforma è accessibile senza connessione Internet?
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        No, la piattaforma non è accessibile offline. È necessario disporre di una connessione a Internet per poterla
-                        utilizzare, in quanto si tratta di un sistema basato su tecnologia cloud. Questo garantisce l’aggiornamento continuo
-                        dei dati, la sincronizzazione in tempo reale e l’accesso sicuro da più dispositivi autorizzati.
+                <div class="col-md-6 column">
+                    
+                    <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
+                        <h2 class="accordion-header" id="accordion-header" >
+                            <button class="accordion-btn" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" >
+                                La piattaforma è accessibile senza connessione Internet?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                No, la piattaforma non è accessibile offline. È necessario disporre di una connessione a Internet per poterla
+                                utilizzare, in quanto si tratta di un sistema basato su tecnologia cloud. Questo garantisce l’aggiornamento continuo
+                                dei dati, la sincronizzazione in tempo reale e l’accesso sicuro da più dispositivi autorizzati.
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
+                    <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
+                        <h2 class="accordion-header" id="accordion-header">
+                            <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                aria-expanded="false">
+                                La piattaforma è fruibile anche da dispositivi mobili o tablet?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Sì, la piattaforma è accessibile anche da dispositivi mobili e tablet. Tuttavia, al momento l'accesso è
+                                possibile esclusivamente tramite browser web. Non è ancora disponibile un'applicazione mobile dedicata, ma
+                                l'interfaccia è ottimizzata per garantire una buona esperienza d’uso anche da smartphone e tablet.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
+                        <h2 class="accordion-header" id="accordion-header">
+                            <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                aria-expanded="false" style="font-size: 20px;">
+                                Posso integrare dispositivi wearable per l’acquisizione dei dati del paziente?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Attualmente non è ancora possibile integrare dispositivi wearable (come smartwatch o braccialetti per il
+                                monitoraggio dei parametri vitali) direttamente con la piattaforma. Tuttavia, stiamo lavorando per
+                                introdurre questa funzionalità in una futura versione, al fine di arricchire l’esperienza d’uso e migliorare
+                                il monitoraggio dei pazienti in tempo reale.
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
-                    <h2 class="accordion-header" id="accordion-header">
-                        <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                            aria-expanded="false">
-                            La piattaforma è fruibile anche da dispositivi mobili o tablet?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Sì, la piattaforma è accessibile anche da dispositivi mobili e tablet. Tuttavia, al momento l'accesso è
-                            possibile esclusivamente tramite browser web. Non è ancora disponibile un'applicazione mobile dedicata, ma
-                            l'interfaccia è ottimizzata per garantire una buona esperienza d’uso anche da smartphone e tablet.
-                        </div>
-                    </div>
-                </div>
+                <div class="col-md-6 column">
 
-                <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
-                    <h2 class="accordion-header" id="accordion-header">
-                        <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                            aria-expanded="false">
-                            Posso integrare dispositivi wearable per l’acquisizione dei dati del paziente?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Attualmente non è ancora possibile integrare dispositivi wearable (come smartwatch o braccialetti per il
-                            monitoraggio dei parametri vitali) direttamente con la piattaforma. Tuttavia, stiamo lavorando per
-                            introdurre questa funzionalità in una futura versione, al fine di arricchire l’esperienza d’uso e migliorare
-                            il monitoraggio dei pazienti in tempo reale.
+                    <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
+                        <h2 class="accordion-header" id="accordion-header">
+                            <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                aria-expanded="false">
+                                Come viene garantita la sicurezza dei dati sensibili dei pazienti?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                La piattaforma adotta le migliori pratiche in materia di cybersecurity e rispetta pienamente il Regolamento
+                                Generale sulla Protezione dei Dati (GDPR). I dati vengono cifrati, archiviati su server sicuri e accessibili
+                                solo da utenti autorizzati. Sono inoltre implementati sistemi di autenticazione e controllo degli accessi
+                                per prevenire qualsiasi utilizzo improprio delle informazioni.
+                            </div>
                         </div>
                     </div>
-                </div>
-  
-                <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
-                    <h2 class="accordion-header" id="accordion-header">
-                        <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                            aria-expanded="false">
-                            Come viene garantita la sicurezza dei dati sensibili dei pazienti?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            La piattaforma adotta le migliori pratiche in materia di cybersecurity e rispetta pienamente il Regolamento
-                            Generale sulla Protezione dei Dati (GDPR). I dati vengono cifrati, archiviati su server sicuri e accessibili
-                            solo da utenti autorizzati. Sono inoltre implementati sistemi di autenticazione e controllo degli accessi
-                            per prevenire qualsiasi utilizzo improprio delle informazioni.
+    
+                    <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
+                        <h2 class="accordion-header" id="accordion-header">
+                            <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                aria-expanded="false">
+                                Il paziente può accedere alla sua cartella?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Al momento, l’accesso alla cartella clinica da parte del paziente non è autonomo. È necessario che sia il
+                                medico o il professionista ad accedere alla piattaforma e condividere, se necessario, le informazioni
+                                rilevanti con il paziente. Stiamo valutando l’introduzione di un modulo di accesso riservato anche per i
+                                pazienti, in conformità con gli standard di sicurezza e privacy.
+                            </div>
                         </div>
                     </div>
-                </div>
-  
-                <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
-                    <h2 class="accordion-header" id="accordion-header">
-                        <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                            aria-expanded="false">
-                            Il paziente può accedere alla sua cartella?
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Al momento, l’accesso alla cartella clinica da parte del paziente non è autonomo. È necessario che sia il
-                            medico o il professionista ad accedere alla piattaforma e condividere, se necessario, le informazioni
-                            rilevanti con il paziente. Stiamo valutando l’introduzione di un modulo di accesso riservato anche per i
-                            pazienti, in conformità con gli standard di sicurezza e privacy.
+                    
+                    <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
+                        <h2 class="accordion-header" id="accordion-header">
+                            <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                aria-expanded="false">
+                                E’ previsto un supporto tecnico per l’uso della piattaforma?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Sì, offriamo un servizio di supporto tecnico dedicato per assistere gli utenti in caso di problemi, dubbi o
+                                malfunzionamenti. Inoltre, è previsto un programma di formazione iniziale per facilitare l’utilizzo corretto
+                                della piattaforma, con materiali didattici e sessioni pratiche, pensato sia per i professionisti sanitari
+                                sia per il personale amministrativo.
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="accordion-item col-12 col-md-5 col-lg-6 col-xxl-5" id="accordion-item">
-                    <h2 class="accordion-header" id="accordion-header">
-                        <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                            aria-expanded="false">
-                            E’ previsto un supporto tecnico per l’uso della piattaforma?
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Sì, offriamo un servizio di supporto tecnico dedicato per assistere gli utenti in caso di problemi, dubbi o
-                            malfunzionamenti. Inoltre, è previsto un programma di formazione iniziale per facilitare l’utilizzo corretto
-                            della piattaforma, con materiali didattici e sessioni pratiche, pensato sia per i professionisti sanitari
-                            sia per il personale amministrativo.
-                        </div>
-                    </div>
+
                 </div>
             </div>
-
-            <p style="text-align: center; margin-top: 2rem; margin-bottom: -2rem;">Hai ancora dubbi?</p>
-
-            <div class="col-md-12 p-5 container-btn-domanda">
-                <button onclick="window.location ='/BVA-WebSite/url/contattaci/contattaci.html'" class="button">
-                    <span class="button__icon-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="button__icon-svg"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M0 4a2 2 0 012-2h12a2 2 0 012 2v.217l-8 4.8-8-4.8V4zm0 1.383v6.617A2 2 0 002 14h12a2 2 0 002-2V5.383l-7.555 4.533a.5.5 0 01-.89 0L0 5.383z" />
-                        </svg>
-                
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                            class="button__icon-svg button__icon-svg--copy" viewBox="0 0 16 16">
-                            <path
-                                d="M0 4a2 2 0 012-2h12a2 2 0 012 2v.217l-8 4.8-8-4.8V4zm0 1.383v6.617A2 2 0 002 14h12a2 2 0 002-2V5.383l-7.555 4.533a.5.5 0 01-.89 0L0 5.383z" />
-                        </svg>
-                
-                    </span>
-                    Contattaci
-                </button>
-            </div>
-           
         </div>
 
         <!--

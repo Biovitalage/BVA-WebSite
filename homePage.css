@@ -1,39 +1,25 @@
 /* Home Section Style */
-.grid-container{
-    transition: all 0.2s ease-in-out;
-}
 
 .text-justify {
     text-align: justify !important;
 }
   
 
-/* Home img container */
+/* HOME STYLE */
 .Home__img-container{
     width: 100%;
     display: flex;
     z-index: 1;
     position: relative;
+    overflow: hidden;
 }
 .Home__img-container img{
     width: 50%;
     opacity: 0.6;
-}
-
-.Home__img-container {
-    width: 100%;
-    display: flex;
-    position: relative;
-    overflow: hidden; /* 🔧 impedisce lo "strabordare" */
-}
-
-.Home__img-container img {
-    width: 50%;
     height: auto;
-    object-fit: cover; /* 🔧 assicura che le immagini riempiano senza deformarsi */
+    object-fit: cover;
     flex-shrink: 0;
 }
-
 .Home__subtitle-container{
     width: 50%;
     height: 50%;
@@ -83,6 +69,20 @@
     gap: 4rem;
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
 }
+.contenitore-video{
+    position: relative;
+    height: 60em;
+    overflow: hidden;
+}
+.container-content-gif{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
 
 
 video{
@@ -109,20 +109,30 @@ video{
 .Home-content-Intro h3{
     color: var(--tittle2);
     letter-spacing: 0.5px;
-    font-family: "Raleway", sans-serif;
+      font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
     font-size: 45px;
-    font-weight: 700;
     margin-bottom: 0;
+    max-width: 60%;
+    text-align: center;
 }
 .Home-content-Intro .subtitle{
     color: var(--tittle1);
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 25px;
-    font-weight: lighter;
+    font-weight: 600;
     display: flex;
     line-height: normal;
     margin-bottom: 0;
     justify-content: start;
+}
+.text-intro{
+    max-width: 80%;
+    text-align: center;
 }
 
 
@@ -170,7 +180,24 @@ video{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  Perchè Noi  */
+.grid-container{
+    transition: all 0.2s ease-in-out;
+}
 .Home-Content-container-scleta{
     margin: 6rem auto 0rem auto;
 }
@@ -186,12 +213,14 @@ video{
     padding: 20px;
 }
 .Home-Content-container-vantaggi{
+
     margin: -2rem auto auto auto;
     gap: 10px;
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
+    width: 80%;
 }
 .grid-container{
     background-color: rgba(176, 184, 193, 0.2);
@@ -263,26 +292,23 @@ video{
     justify-content: center;
     align-items: center;
 }
-#domanda{
-    width: 16rem;
-    padding: 8px;
-    height: 3rem;
-}
 .accordion{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 8px;
+    width: 80%;
+    margin: auto;
 }
 #accordion-item{
     background: none;
     border: none;
+    width: 100%;
 }
 #accordion-item h2{
     background-color: var(--neutral-bg-color);
     border: none;
+    height: 5.5rem;
 }
 .accordion-btn{
     background: none;
@@ -701,6 +727,7 @@ video{
     }
 
 
+
     @media only screen and (min-width: 355px) and (max-width: 475px) {
         .accordion-btn{
             padding-right: 40px;
@@ -1014,12 +1041,7 @@ video{
 
 }
 
-/* Contenitore Video */
-.contenitore-video{
-    position: relative;
-    height: 60em;
-    overflow: hidden;
-}
+
 
 @media (max-width: 1440px) {
   .Home-content-container-piattaforma{
